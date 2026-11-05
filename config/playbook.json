@@ -21,7 +21,7 @@
   ],
   "baseline": {
     "week": "2026-W44",
-    "am_id": "005_rosa",
+    "am_id": "005_jade",
     "total": 38,
     "by_tool": { "salesforce": 14, "gong": 7, "clay": 3, "slack": 11, "payments_dashboard": 3 }
   },

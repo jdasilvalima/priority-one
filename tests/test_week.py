@@ -29,7 +29,7 @@ def test_page_is_plain_json(week):
 
 
 def test_header(week):
-    assert week["user"] == {"name": "Rosa D.", "initials": "RD", "title": "Account Manager", "account_count": 42}
+    assert week["user"] == {"name": "Jade D.", "initials": "JD", "title": "Account Manager", "account_count": 42}
     assert week["week_label"] == "Week 45 · Mon 2 Nov 2026"
 
 

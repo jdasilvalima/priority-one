@@ -103,7 +103,7 @@ def test_34_healthy_accounts_fire_nothing(run):
     assert run["healthy_count"] == 34
 
 
-def test_5_accounts_need_rosa_and_3_can_wait(run, playbook):
+def test_5_accounts_need_jade_and_3_can_wait(run, playbook):
     listed = [a for a in run["accounts"] if a["tier"] in playbook["list_tiers"]]
     assert len(listed) == 5
     assert len(run["accounts"]) - len(listed) == 3
@@ -114,10 +114,10 @@ def test_13_signals_fire_in_total(run):
 
 
 # The data files themselves
-def test_book_has_42_accounts_owned_by_rosa(raw):
+def test_book_has_42_accounts_owned_by_jade(raw):
     accounts = raw["salesforce"]["accounts"]["records"]
     assert len(accounts) == 42
-    assert {a["OwnerId"] for a in accounts} == {"005_rosa"}
+    assert {a["OwnerId"] for a in accounts} == {"005_jade"}
 
 
 def test_salesforce_has_8_lists(raw):

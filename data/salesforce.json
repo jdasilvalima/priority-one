@@ -7,7 +7,7 @@
    {
     "Id": "001_northwind",
     "Name": "Northwind Apparel",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 2400000,
     "Merchant_Account_Code__c": "NWAPP_ECOM",
     "Sub_Vertical__c": "Fashion e-commerce",
@@ -16,7 +16,7 @@
    {
     "Id": "001_kestrel",
     "Name": "Kestrel Travel Group",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 3100000,
     "Merchant_Account_Code__c": "KTG_ECOM",
     "Sub_Vertical__c": "Online travel",
@@ -25,7 +25,7 @@
    {
     "Id": "001_halcyon",
     "Name": "Halcyon Hotels",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 420000,
     "Merchant_Account_Code__c": "HALCY_ECOM",
     "Sub_Vertical__c": "Hospitality",
@@ -34,7 +34,7 @@
    {
     "Id": "001_pico",
     "Name": "Pico Subscriptions",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 310000,
     "Merchant_Account_Code__c": "PICO_ECOM",
     "Sub_Vertical__c": "Subscription boxes",
@@ -43,7 +43,7 @@
    {
     "Id": "001_vantor",
     "Name": "Vantor Gaming",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1600000,
     "Merchant_Account_Code__c": "VANTR_ECOM",
     "Sub_Vertical__c": "Online gaming",
@@ -52,7 +52,7 @@
    {
     "Id": "001_lumen",
     "Name": "Lumen Mobility",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 540000,
     "Merchant_Account_Code__c": "LUMEN_ECOM",
     "Sub_Vertical__c": "Urban mobility",
@@ -61,7 +61,7 @@
    {
     "Id": "001_bloom",
     "Name": "Bloom & Co Grocers",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 85000,
     "Merchant_Account_Code__c": "BLOOM_ECOM",
     "Sub_Vertical__c": "Grocery",
@@ -70,7 +70,7 @@
    {
     "Id": "001_orbit",
     "Name": "Orbit Ticketing",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 260000,
     "Merchant_Account_Code__c": "ORBIT_ECOM",
     "Sub_Vertical__c": "Event ticketing",
@@ -79,7 +79,7 @@
    {
     "Id": "001_alder",
     "Name": "Alder & Finch Home",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 755000,
     "Merchant_Account_Code__c": "ALDER_ECOM",
     "Sub_Vertical__c": "Home goods",
@@ -88,7 +88,7 @@
    {
     "Id": "001_amberline",
     "Name": "Amberline Pet Supply",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 835000,
     "Merchant_Account_Code__c": "AMBER_ECOM",
     "Sub_Vertical__c": "Pet supplies",
@@ -97,7 +97,7 @@
    {
     "Id": "001_arcadia",
     "Name": "Arcadia Bike Works",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 85000,
     "Merchant_Account_Code__c": "ARCAD_ECOM",
     "Sub_Vertical__c": "Sporting goods",
@@ -106,7 +106,7 @@
    {
     "Id": "001_bluefen",
     "Name": "Bluefen Outdoor",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 855000,
     "Merchant_Account_Code__c": "BLUEF_ECOM",
     "Sub_Vertical__c": "Outdoor gear",
@@ -115,7 +115,7 @@
    {
     "Id": "001_brightwell",
     "Name": "Brightwell Pharmacy",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1655000,
     "Merchant_Account_Code__c": "BRIGH_ECOM",
     "Sub_Vertical__c": "Health retail",
@@ -124,7 +124,7 @@
    {
     "Id": "001_cedarlane",
     "Name": "Cedar Lane Books",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 600000,
     "Merchant_Account_Code__c": "CEDAR_ECOM",
     "Sub_Vertical__c": "Books",
@@ -133,7 +133,7 @@
    {
     "Id": "001_copperleaf",
     "Name": "Copperleaf Coffee",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 250000,
     "Merchant_Account_Code__c": "COPPE_ECOM",
     "Sub_Vertical__c": "Food and drink",
@@ -142,7 +142,7 @@
    {
     "Id": "001_driftwood",
     "Name": "Driftwood Surf Co",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 140000,
     "Merchant_Account_Code__c": "DRIFT_ECOM",
     "Sub_Vertical__c": "Sporting goods",
@@ -151,7 +151,7 @@
    {
     "Id": "001_elmhurst",
     "Name": "Elmhurst Furniture",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 875000,
     "Merchant_Account_Code__c": "ELMHU_ECOM",
     "Sub_Vertical__c": "Home goods",
@@ -160,7 +160,7 @@
    {
     "Id": "001_fernhill",
     "Name": "Fernhill Garden",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 900000,
     "Merchant_Account_Code__c": "FERNH_ECOM",
     "Sub_Vertical__c": "Home goods",
@@ -169,7 +169,7 @@
    {
     "Id": "001_foxglove",
     "Name": "Foxglove Beauty",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1575000,
     "Merchant_Account_Code__c": "FOXGL_ECOM",
     "Sub_Vertical__c": "Beauty",
@@ -178,7 +178,7 @@
    {
     "Id": "001_glasswing",
     "Name": "Glasswing Optics",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 595000,
     "Merchant_Account_Code__c": "GLASS_ECOM",
     "Sub_Vertical__c": "Health retail",
@@ -187,7 +187,7 @@
    {
     "Id": "001_goldcrest",
     "Name": "Goldcrest Jewelers",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 695000,
     "Merchant_Account_Code__c": "GOLDC_ECOM",
     "Sub_Vertical__c": "Luxury",
@@ -196,7 +196,7 @@
    {
     "Id": "001_harbourlight",
     "Name": "Harbourlight Ferries",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 810000,
     "Merchant_Account_Code__c": "HARBO_ECOM",
     "Sub_Vertical__c": "Travel",
@@ -205,7 +205,7 @@
    {
     "Id": "001_hazelwood",
     "Name": "Hazelwood Toys",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1030000,
     "Merchant_Account_Code__c": "HAZEL_ECOM",
     "Sub_Vertical__c": "Toys",
@@ -214,7 +214,7 @@
    {
     "Id": "001_ironbridge",
     "Name": "Ironbridge Tools",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1490000,
     "Merchant_Account_Code__c": "IRONB_ECOM",
     "Sub_Vertical__c": "Hardware",
@@ -223,7 +223,7 @@
    {
     "Id": "001_juniper",
     "Name": "Juniper Wellness",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1655000,
     "Merchant_Account_Code__c": "JUNIP_ECOM",
     "Sub_Vertical__c": "Health retail",
@@ -232,7 +232,7 @@
    {
     "Id": "001_kingfisher",
     "Name": "Kingfisher Sports",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 870000,
     "Merchant_Account_Code__c": "KINGF_ECOM",
     "Sub_Vertical__c": "Sporting goods",
@@ -241,7 +241,7 @@
    {
     "Id": "001_larkspur",
     "Name": "Larkspur Flowers",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1650000,
     "Merchant_Account_Code__c": "LARKS_ECOM",
     "Sub_Vertical__c": "Gifts",
@@ -250,7 +250,7 @@
    {
     "Id": "001_marlowe",
     "Name": "Marlowe Stationery",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 65000,
     "Merchant_Account_Code__c": "MARLO_ECOM",
     "Sub_Vertical__c": "Office supplies",
@@ -259,7 +259,7 @@
    {
     "Id": "001_meadowbank",
     "Name": "Meadowbank Dairy",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1645000,
     "Merchant_Account_Code__c": "MEADO_ECOM",
     "Sub_Vertical__c": "Grocery",
@@ -268,7 +268,7 @@
    {
     "Id": "001_nettlefield",
     "Name": "Nettlefield Tea",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 900000,
     "Merchant_Account_Code__c": "NETTL_ECOM",
     "Sub_Vertical__c": "Food and drink",
@@ -277,7 +277,7 @@
    {
     "Id": "001_oakhaven",
     "Name": "Oakhaven Camping",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1320000,
     "Merchant_Account_Code__c": "OAKHA_ECOM",
     "Sub_Vertical__c": "Outdoor gear",
@@ -286,7 +286,7 @@
    {
     "Id": "001_pebblecreek",
     "Name": "Pebblecreek Shoes",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1285000,
     "Merchant_Account_Code__c": "PEBBL_ECOM",
     "Sub_Vertical__c": "Fashion e-commerce",
@@ -295,7 +295,7 @@
    {
     "Id": "001_quillon",
     "Name": "Quillon Audio",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 220000,
     "Merchant_Account_Code__c": "QUILL_ECOM",
     "Sub_Vertical__c": "Electronics",
@@ -304,7 +304,7 @@
    {
     "Id": "001_redwing",
     "Name": "Redwing Cycles",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1060000,
     "Merchant_Account_Code__c": "REDWI_ECOM",
     "Sub_Vertical__c": "Sporting goods",
@@ -313,7 +313,7 @@
    {
     "Id": "001_saltmarsh",
     "Name": "Saltmarsh Seafood",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1760000,
     "Merchant_Account_Code__c": "SALTM_ECOM",
     "Sub_Vertical__c": "Grocery",
@@ -322,7 +322,7 @@
    {
     "Id": "001_silverbirch",
     "Name": "Silverbirch Kitchens",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1055000,
     "Merchant_Account_Code__c": "SILVE_ECOM",
     "Sub_Vertical__c": "Home goods",
@@ -331,7 +331,7 @@
    {
     "Id": "001_thistledown",
     "Name": "Thistledown Yarn",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1085000,
     "Merchant_Account_Code__c": "THIST_ECOM",
     "Sub_Vertical__c": "Crafts",
@@ -340,7 +340,7 @@
    {
     "Id": "001_tidewater",
     "Name": "Tidewater Cruises",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 240000,
     "Merchant_Account_Code__c": "TIDEW_ECOM",
     "Sub_Vertical__c": "Travel",
@@ -349,7 +349,7 @@
    {
     "Id": "001_umberline",
     "Name": "Umberline Paints",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 655000,
     "Merchant_Account_Code__c": "UMBER_ECOM",
     "Sub_Vertical__c": "Hardware",
@@ -358,7 +358,7 @@
    {
     "Id": "001_wrenfield",
     "Name": "Wrenfield Electronics",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1530000,
     "Merchant_Account_Code__c": "WRENF_ECOM",
     "Sub_Vertical__c": "Electronics",
@@ -367,7 +367,7 @@
    {
     "Id": "001_yarrow",
     "Name": "Yarrow Organics",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1800000,
     "Merchant_Account_Code__c": "YARRO_ECOM",
     "Sub_Vertical__c": "Grocery",
@@ -376,7 +376,7 @@
    {
     "Id": "001_zephyr",
     "Name": "Zephyr Scooters",
-    "OwnerId": "005_rosa",
+    "OwnerId": "005_jade",
     "Annual_Revenue_To_Us__c": 1725000,
     "Merchant_Account_Code__c": "ZEPHY_ECOM",
     "Sub_Vertical__c": "Urban mobility",
@@ -389,8 +389,8 @@
   "done": true,
   "records": [
    {
-    "Id": "005_rosa",
-    "Name": "Rosa D.",
+    "Id": "005_jade",
+    "Name": "Jade D.",
     "Title": "Account Manager"
    }
   ]

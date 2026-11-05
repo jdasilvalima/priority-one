@@ -21,7 +21,7 @@ def main() -> None:
     week = build_week(load_raw(), DEMO_NOW, load_playbook())
     target = ROOT / "web" / "public" / "week.json"
     target.write_text(json.dumps(week, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"week.json: {week['need_you_count']} accounts need Rosa, {len(week['can_wait'])} can wait")
+    print(f"week.json: {week['need_you_count']} accounts need Jade, {len(week['can_wait'])} can wait")
 
 
 if __name__ == "__main__":

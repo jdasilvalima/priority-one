@@ -1,0 +1,115 @@
+/* Values copied from the design reference (Focus.dc.html). */
+* { box-sizing: border-box; }
+body { margin: 0; background: #F7F9FA; }
+button { cursor: pointer; }
+button:focus-visible, select:focus-visible { outline: 2px solid #0ABF53; outline-offset: 2px; }
+.dz{font-family:Inter,system-ui,sans-serif;color:#00112C;background:#F7F9FA;line-height:normal;font-size:16px}
+.dz p{margin:0}.dz h1,.dz h2{margin:0}
+.ds-in{max-width:1120px;margin:0 auto;padding:0 32px}
+.ds-top,.ds-hero{background:#00112C;color:#fff}
+.ds-bar{min-height:68px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.ds-logo{display:flex;align-items:center;gap:10px}
+.ds-logo i{width:12px;height:12px;border-radius:999px;background:#0ABF53}
+.ds-logo b{font-size:20px;font-weight:700;letter-spacing:-.02em}
+.ds-who{display:flex;align-items:center;gap:10px;font-size:14px;color:#C9D1DD}
+.ds-av{width:36px;height:36px;border-radius:999px;background:#0ABF53;color:#00112C;font-weight:700;display:inline-flex;align-items:center;justify-content:center}
+.ds-hero{padding:32px 0 40px}
+.ds-week{font-size:14px;font-weight:600;color:#0ABF53;letter-spacing:.08em;text-transform:uppercase}
+.ds-hero h1{margin-top:8px;font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-.03em}
+.ds-lead{margin-top:12px!important;font-size:17px;line-height:1.5;color:#C9D1DD;max-width:780px}
+.ds-strip{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:#1B2A44;border-radius:14px;padding:14px 18px;font-size:14px;line-height:1.5}
+.ds-strip span{background:#00112C;border-radius:8px;padding:4px 10px}
+.ds-strip em{font-style:normal;color:#A9B4C4}
+.ds-strip b{color:#0ABF53;font-weight:700}
+.ds-pills{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:13px}
+.ds-dl{color:#A9B4C4;font-weight:600}
+.ds-dp{display:inline-flex;align-items:center;gap:6px;background:#1B2A44;border-radius:999px;padding:6px 12px}
+.ds-dp i{width:8px;height:8px;border-radius:999px}
+.ds-m{padding-top:28px;padding-bottom:64px}
+.ds-groups{display:flex;flex-direction:column;gap:28px}
+.ds-gh{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:15px;font-weight:600;color:#33415A}
+.ds-badge{font-size:15px;font-weight:700;color:#00112C;border-radius:10px;padding:8px 14px}
+.ds-list{margin-top:12px;display:flex;flex-direction:column;gap:14px}
+.ds-card{background:#fff;border:1px solid #E3E6EA;border-radius:18px;padding:22px 24px}
+.ds-row{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:flex-start}
+.ds-rank{flex:0 0 40px;height:40px;border-radius:12px;background:#00112C;color:#fff;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:700}
+.ds-body{flex:1 1 400px;min-width:0}
+.ds-nl{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+.ds-nl h2{font-size:21px;font-weight:700}
+.ds-meta{font-size:13px;color:#5C687C}
+.ds-hl{margin-top:6px!important;font-size:16px;line-height:1.45}
+.ds-sigs{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.ds-sigs li{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:14px}
+.ds-sig{display:flex;gap:10px;align-items:center;flex:1 1 240px}
+.ds-pill{font-size:11px;font-weight:700;color:#00112C;border-radius:999px;padding:2px 8px}
+.ds-src{font-size:12px;text-decoration:underline;cursor:pointer}
+.ds-score{flex:0 0 170px;text-align:right}
+.ds-sl{font-size:12px;color:#5C687C;font-weight:600}
+.ds-sn{margin-top:2px!important;font-size:30px;font-weight:700;letter-spacing:-.02em}
+.ds-sf{font-size:12px;color:#5C687C}
+.ds-next{margin-top:16px;background:#F3F8F5;border-radius:14px;padding:16px 18px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center}
+.ds-nb{flex:1 1 360px;min-width:0}
+.ds-dn{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ds-dn>span:first-child{font-size:12px;font-weight:700;color:#007A3D;text-transform:uppercase;letter-spacing:.06em}
+.ds-eff{font-size:12px;font-weight:700;border-radius:999px;padding:2px 9px}
+.ds-nt{margin-top:4px!important;font-size:17px;font-weight:700}
+.ds-rd{margin-top:2px!important;font-size:13px;color:#33415A}
+.ds-acts{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ds-log{border:0;background:#0ABF53;color:#00112C;border-radius:999px;padding:12px 18px;font-size:14px;font-weight:700;font-family:inherit}
+.ds-snz{border:1px solid #C9D1DD;background:#fff;color:#00112C;border-radius:999px;padding:11px 16px;font-size:14px;font-weight:600;font-family:inherit}
+.ds-lnk{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.ds-a{border:0;background:transparent;color:#00112C;padding:8px 0;font-size:14px;font-weight:600;text-decoration:underline;font-family:inherit}
+.ds-mut{color:#5C687C}
+.ds-box{margin-top:8px;border:1px solid #E3E6EA;border-radius:14px;padding:16px 18px}
+.ds-box table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px;color:#00112C}
+.ds-box th{text-align:left;color:#5C687C;font-size:12px;text-transform:uppercase;letter-spacing:.05em;padding:8px;border-bottom:1px solid #E3E6EA;font-weight:600}
+.ds-box td{padding:10px 8px;border-bottom:1px solid #F0F2F4}
+.ds-box tr:last-child td{border:0}
+.ds-box .r{text-align:right}.ds-box .b{font-weight:700}
+.ds-tot{margin-top:10px!important;font-size:15px}
+.ds-note{margin-top:6px!important;font-size:13px;color:#5C687C;line-height:1.5}
+.ds-flag{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}
+.ds-sel{flex:1 1 260px;min-width:0}
+.ds-sel label{display:block;font-size:13px;font-weight:600}
+.ds-sel select{margin-top:6px;width:100%;font-family:inherit;font-size:14px;padding:11px;border:1px solid #C9D1DD;border-radius:10px;background:#fff;color:#00112C}
+.ds-send{border:0;background:#00112C;color:#fff;border-radius:999px;padding:12px 18px;font-size:14px;font-weight:600;font-family:inherit}
+.ds-wait{margin-top:28px;background:#fff;border:1px solid #E3E6EA;border-radius:18px;padding:20px 24px}
+.ds-wait h2{font-size:17px;font-weight:700}
+.ds-ws{margin-top:4px!important;font-size:14px;color:#5C687C}
+.ds-wait ul{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:14px}
+.ds-wait li{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
+.ds-wait li strong{min-width:190px}
+.ds-wt{flex:1 1 260px;color:#33415A}
+.ds-wf{color:#5C687C}
+.ds-34{margin-top:14px!important;font-size:14px;color:#5C687C}
+.ds-34 strong{color:#00112C}
+.ds-foot{margin-top:18px!important;font-size:13px;color:#5C687C}
+
+/* The design measures 1120px of content, padding added on top. */
+.ds-in { box-sizing: content-box; }
+
+/* Not in the design: small additions for this build. */
+.ds-dp i { background: #0ABF53; }
+.ds-src { border: 0; background: none; padding: 0; color: #5C687C; font-family: inherit; }
+.ds-scroll { overflow-x: auto; }
+.ds-data { color: #5C687C; }
+.ds-size { color: #33415A; }
+.ds-state { font-family: Inter, system-ui, sans-serif; color: #00112C; padding: 32px; text-align: center; }
+
+.ds-toast {
+  position: fixed; right: 24px; bottom: 24px; z-index: 10; max-width: 420px;
+  display: flex; gap: 12px; align-items: flex-start;
+  background: #00112C; color: #fff; border-left: 4px solid #0ABF53; border-radius: 12px;
+  padding: 14px 14px 14px 16px; font-size: 14px; line-height: 1.45;
+  box-shadow: 0 8px 24px rgba(0, 17, 44, .28);
+}
+.ds-toast p { margin: 0; }
+.ds-toast button { border: 0; background: none; color: #C9D1DD; font-size: 20px; line-height: 1; padding: 0 2px; font-family: inherit; }
+
+@media (max-width: 640px) {
+  .ds-in { padding: 0 18px; }
+  .ds-hero h1 { font-size: 34px; }
+  .ds-card { padding: 18px; }
+  .ds-score { flex: 1 1 100%; text-align: left; }
+  .ds-toast { left: 12px; right: 12px; bottom: 12px; max-width: none; }
+}

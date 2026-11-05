@@ -10,7 +10,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 DATA = Path(__file__).resolve().parent.parent / "data"
-ROSA = "005_rosa"
+JADE = "005_jade"
 FIRST_DAY = date(2026, 8, 31)
 LAST_DAY = date(2026, 11, 1)
 WEEKDAY_SHAPE = [1.0, 0.98, 0.97, 0.99, 1.05, 1.12, 0.89]  # Monday to Sunday, mean 1
@@ -23,7 +23,7 @@ def soql(records: list[dict]) -> dict:
 
 def account(key, name, revenue, code, vertical, go_live) -> dict:
     return {
-        "Id": f"001_{key}", "Name": name, "OwnerId": ROSA, "Annual_Revenue_To_Us__c": revenue,
+        "Id": f"001_{key}", "Name": name, "OwnerId": JADE, "Annual_Revenue_To_Us__c": revenue,
         "Merchant_Account_Code__c": code, "Sub_Vertical__c": vertical, "Go_Live_Date__c": go_live,
     }
 
@@ -269,7 +269,7 @@ def main() -> None:
     write("salesforce.json", {
         "as_of": "2026-11-02T07:00:00Z",
         "accounts": soql(accounts),
-        "users": soql([{"Id": ROSA, "Name": "Rosa D.", "Title": "Account Manager"}]),
+        "users": soql([{"Id": JADE, "Name": "Jade D.", "Title": "Account Manager"}]),
         "contact_roles": soql(STORY_ROLES + healthy["roles"]),
         "contracts": soql(STORY_CONTRACTS + healthy["contracts"]),
         "opportunities": soql(STORY_OPPORTUNITIES + healthy["opportunities"]),

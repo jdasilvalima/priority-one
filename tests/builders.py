@@ -97,7 +97,7 @@ def payments(recent_days=7, baseline_days=28, recent=None, baseline=None) -> lis
 def make_facts(**overrides) -> AccountFacts:
     """An account that fires nothing, unless a test overrides a field."""
     defaults = dict(
-        account_id="001_test", name="Test Co", am_id="005_rosa", revenue_eur=500000,
+        account_id="001_test", name="Test Co", am_id="005_jade", revenue_eur=500000,
         merchant_code="TEST_ECOM", sub_vertical="Retail", go_live=None,
         contacts=[], contracts=[], opportunities=[], cases=[], calls=[call()],
         meetings=[], surveys=[], job_changes=[], payments=[],
