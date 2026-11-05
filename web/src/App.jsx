@@ -2,7 +2,8 @@ import { useCallback, useEffect, useState } from "react";
 import Card from "./Card.jsx";
 import { TIERS, TierPill } from "./tiers.jsx";
 
-const WEEK_URL = "/week.json";
+// The address of the database stays on the server: the page only knows this route.
+const WEEK_URL = import.meta.env.DEV ? "/week.json" : "/api/week";
 const NOTIFICATION_MS = 7000;
 
 function Header({ user }) {

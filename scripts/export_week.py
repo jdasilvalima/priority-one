@@ -5,16 +5,13 @@ Run: python scripts/export_week.py
 
 import json
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from app.sources import load_playbook, load_raw  # noqa: E402
-from app.week import build_week  # noqa: E402
-
-DEMO_NOW = datetime(2026, 11, 2, 7, 12, tzinfo=timezone.utc)
+from app.week import DEMO_NOW, build_week  # noqa: E402
 
 
 def main() -> None:

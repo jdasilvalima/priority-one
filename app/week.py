@@ -2,12 +2,15 @@
 
 from datetime import datetime, timedelta, timezone
 
+from app.facts import to_facts
 from app.rules import MONTHS, short_date
 from app.scoring import compute_run
 
 # The demo clock is fixed on a Monday in November, so Amsterdam is always UTC+1 here.
 AMSTERDAM = timezone(timedelta(hours=1))
 WEEKDAYS = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+# The demo always shows this Monday morning, so the page never goes out of date.
+DEMO_NOW = datetime(2026, 11, 2, 7, 12, tzinfo=timezone.utc)
 
 
 def fresh_label(as_of: datetime, now: datetime) -> str:
@@ -88,26 +91,46 @@ def _card(row: dict, labels: dict, fresh: dict) -> dict:
     }
 
 
-def build_week(raw: dict, now: datetime, playbook: dict) -> dict:
-    run = compute_run(raw, now, playbook)
-    fresh = {source: fresh_label(moment, now) for source, moment in _as_of_by_source(raw).items()}
+def take_snapshot(raw: dict, now: datetime, playbook: dict) -> dict:
+    """Everything worth keeping after scoring. This is what the database stores."""
+    user = raw["salesforce"]["users"]["records"][0]
+    return {
+        "user": {"user_id": user["Id"], "name": user["Name"], "title": user["Title"]},
+        "as_of": _as_of_by_source(raw),
+        "book": [
+            {
+                "account_id": facts.account_id,
+                "name": facts.name,
+                "sub_vertical": facts.sub_vertical,
+                "revenue_eur": facts.revenue_eur,
+                "owner_id": facts.am_id,
+            }
+            for facts in to_facts(raw)
+        ],
+        "accounts": compute_run(raw, now, playbook)["accounts"],
+    }
+
+
+def render_week(snapshot: dict, now: datetime, playbook: dict) -> dict:
+    accounts = snapshot["accounts"]
+    fresh = {source: fresh_label(moment, now) for source, moment in snapshot["as_of"].items()}
     labels = {s["source"]: s["label"] for s in playbook["sources"]}
 
     groups = []
     for tier in playbook["list_tiers"]:
-        cards = [_card(r, labels, fresh) for r in run["accounts"] if r["tier"] == tier]
+        cards = [_card(r, labels, fresh) for r in accounts if r["tier"] == tier]
         if cards:
             groups.append({"tier": tier, "cards": cards})
 
-    user = raw["salesforce"]["users"]["records"][0]
+    user = snapshot["user"]
     local_now = now.astimezone(AMSTERDAM)
     baseline = playbook["baseline"]
     return {
         "user": {
-            "name": user["Name"],
-            "initials": "".join(part[0] for part in user["Name"].split()),
-            "title": user["Title"],
-            "account_count": len(raw["salesforce"]["accounts"]["records"]),
+            "name": user["name"],
+            "initials": "".join(part[0] for part in user["name"].split()),
+            "title": user["title"],
+            "account_count": len(snapshot["book"]),
         },
         "week_label": (
             f"Week {local_now.isocalendar().week} · {WEEKDAYS[local_now.weekday()]} "
@@ -125,7 +148,11 @@ def build_week(raw: dict, now: datetime, playbook: dict) -> dict:
                 "summary": _summary(r),
                 "equation": _equation(r),
             }
-            for r in run["accounts"] if r["tier"] not in playbook["list_tiers"]
+            for r in accounts if r["tier"] not in playbook["list_tiers"]
         ],
-        "healthy_count": run["healthy_count"],
+        "healthy_count": len(snapshot["book"]) - len(accounts),
     }
+
+
+def build_week(raw: dict, now: datetime, playbook: dict) -> dict:
+    return render_week(take_snapshot(raw, now, playbook), now, playbook)
