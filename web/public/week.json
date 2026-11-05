@@ -1,0 +1,235 @@
+{
+ "user": {
+  "name": "Rosa D.",
+  "initials": "RD",
+  "title": "Account Manager",
+  "account_count": 42
+ },
+ "week_label": "Week 45 · Mon 2 Nov 2026",
+ "need_you_count": 5,
+ "alerts": {
+  "total": 38,
+  "tools": 5
+ },
+ "sources": [
+  {
+   "label": "Salesforce",
+   "fresh": "12 min ago"
+  },
+  {
+   "label": "Payments DB",
+   "fresh": "06:00"
+  },
+  {
+   "label": "Clay",
+   "fresh": "yesterday"
+  },
+  {
+   "label": "Gong",
+   "fresh": "06:00"
+  }
+ ],
+ "groups": [
+  {
+   "tier": "Critical",
+   "cards": [
+    {
+     "rank": 1,
+     "account_id": "001_northwind",
+     "name": "Northwind Apparel",
+     "meta": "Fashion e-commerce · €2.4M / yr",
+     "headline": "Approvals fell 6.2 pts and 2 urgent cases are open.",
+     "tier": "Critical",
+     "signals": [
+      {
+       "label": "Auth rate or volume drop",
+       "tier": "Critical",
+       "points": 50,
+       "evidence": "Auth rate 82.1%, down 6.2 pts vs baseline",
+       "source": "Payments DB",
+       "fresh": "06:00"
+      },
+      {
+       "label": "Escalated support case",
+       "tier": "Critical",
+       "points": 50,
+       "evidence": "2 urgent cases, 1 past SLA (case 00481523)",
+       "source": "Salesforce",
+       "fresh": "12 min ago"
+      }
+     ],
+     "score": 200,
+     "formula": "(50 + 50) × 2",
+     "equation": "(50 + 50) × 2 = 200",
+     "size_label": "Large, over €1M / yr",
+     "size_multiplier": "2",
+     "action_text": "Call Jana Weber (Head of Payments Ops) today",
+     "effort": "Medium · ~45 min",
+     "effort_band": "Medium",
+     "prepare": "decline analysis and call notes"
+    },
+    {
+     "rank": 2,
+     "account_id": "001_kestrel",
+     "name": "Kestrel Travel Group",
+     "meta": "Online travel · €3.1M / yr",
+     "headline": "A competitor was named on the last call and the renewal is in 39 days.",
+     "tier": "Critical",
+     "signals": [
+      {
+       "label": "Competitor named on a call",
+       "tier": "Critical",
+       "points": 50,
+       "evidence": "Competitor named on 30 Oct QBR",
+       "source": "Gong",
+       "fresh": "06:00"
+      },
+      {
+       "label": "Renewal within 90 days",
+       "tier": "High",
+       "points": 30,
+       "evidence": "Renews 11 Dec, no renewal opportunity open",
+       "source": "Salesforce",
+       "fresh": "12 min ago"
+      }
+     ],
+     "score": 160,
+     "formula": "(50 + 30) × 2",
+     "equation": "(50 + 30) × 2 = 160",
+     "size_label": "Large, over €1M / yr",
+     "size_multiplier": "2",
+     "action_text": "Book a renewal meeting with Marc Dubois (CFO) and your manager",
+     "effort": "Heavy · ~3 h",
+     "effort_band": "Heavy",
+     "prepare": "meeting invite and value review"
+    },
+    {
+     "rank": 3,
+     "account_id": "001_halcyon",
+     "name": "Halcyon Hotels",
+     "meta": "Hospitality · €420k / yr",
+     "headline": "A payout case is 4 days past SLA and nobody has spoken to them in 63 days.",
+     "tier": "Critical",
+     "signals": [
+      {
+       "label": "Escalated support case",
+       "tier": "Critical",
+       "points": 50,
+       "evidence": "Payout case 4 days past SLA",
+       "source": "Salesforce",
+       "fresh": "12 min ago"
+      },
+      {
+       "label": "No call in 60+ days",
+       "tier": "Low",
+       "points": 5,
+       "evidence": "No call or meeting in 63 days",
+       "source": "Gong",
+       "fresh": "06:00"
+      }
+     ],
+     "score": 83,
+     "formula": "(50 + 5) × 1.5",
+     "equation": "(50 + 5) × 1.5 ≈ 83",
+     "size_label": "Medium, €100k–1M / yr",
+     "size_multiplier": "1.5",
+     "action_text": "Call Siobhan Kelly (Finance Director) with a fix date from Support",
+     "effort": "Quick · ~20 min",
+     "effort_band": "Quick",
+     "prepare": "case summary and support owner"
+    }
+   ]
+  },
+  {
+   "tier": "High",
+   "cards": [
+    {
+     "rank": 4,
+     "account_id": "001_pico",
+     "name": "Pico Subscriptions",
+     "meta": "Subscription boxes · €310k / yr",
+     "headline": "Your champion left in October and the renewal is in 64 days.",
+     "tier": "High",
+     "signals": [
+      {
+       "label": "Champion left",
+       "tier": "High",
+       "points": 30,
+       "evidence": "Head of Payments left, Tom Hughes took over",
+       "source": "Clay",
+       "fresh": "yesterday"
+      },
+      {
+       "label": "Renewal within 90 days",
+       "tier": "High",
+       "points": 30,
+       "evidence": "Renews 5 Jan, no renewal opportunity open",
+       "source": "Salesforce",
+       "fresh": "12 min ago"
+      }
+     ],
+     "score": 90,
+     "formula": "(30 + 30) × 1.5",
+     "equation": "(30 + 30) × 1.5 = 90",
+     "size_label": "Medium, €100k–1M / yr",
+     "size_multiplier": "1.5",
+     "action_text": "Send an intro email to Tom Hughes",
+     "effort": "Quick · ~10 min",
+     "effort_band": "Quick",
+     "prepare": "intro email draft"
+    },
+    {
+     "rank": 5,
+     "account_id": "001_vantor",
+     "name": "Vantor Gaming",
+     "meta": "Online gaming · €1.6M / yr",
+     "headline": "75 days after go-live, volume is 38% below what they committed.",
+     "tier": "High",
+     "signals": [
+      {
+       "label": "Ramp below commitment",
+       "tier": "High",
+       "points": 30,
+       "evidence": "Processed volume 38% below commitment",
+       "source": "Payments DB",
+       "fresh": "06:00"
+      }
+     ],
+     "score": 60,
+     "formula": "30 × 2",
+     "equation": "30 × 2 = 60",
+     "size_label": "Large, over €1M / yr",
+     "size_multiplier": "2",
+     "action_text": "Ramp review with Erik Lund (COO): what is not live yet?",
+     "effort": "Medium · ~1 h",
+     "effort_band": "Medium",
+     "prepare": "volume vs commitment chart"
+    }
+   ]
+  }
+ ],
+ "can_wait": [
+  {
+   "account_id": "001_lumen",
+   "name": "Lumen Mobility",
+   "tier": "Medium",
+   "summary": "4 cases in 30 days · survey score 5",
+   "equation": "(15 + 15) × 1.5 = 45"
+  },
+  {
+   "account_id": "001_bloom",
+   "name": "Bloom & Co Grocers",
+   "tier": "Medium",
+   "summary": "Survey score 6",
+   "equation": "15 × 1 = 15"
+  },
+  {
+   "account_id": "001_orbit",
+   "name": "Orbit Ticketing",
+   "tier": "Low",
+   "summary": "No call or meeting in 70 days",
+   "equation": "5 × 1.5 ≈ 8"
+  }
+ ],
+ "healthy_count": 34
+}

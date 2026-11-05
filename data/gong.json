@@ -1,0 +1,1228 @@
+{
+ "as_of": "2026-11-02T05:00:00Z",
+ "records": {
+  "totalRecords": 42,
+  "currentPageSize": 42,
+  "currentPageNumber": 0
+ },
+ "calls": [
+  {
+   "metaData": {
+    "id": "7782001",
+    "title": "Kestrel Q4 QBR",
+    "started": "2026-10-30T14:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_kestrel"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 2
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7781410",
+    "title": "Northwind monthly check-in",
+    "started": "2026-10-20T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_northwind"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7775120",
+    "title": "Halcyon Q3 review",
+    "started": "2026-08-31T09:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_halcyon"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7781633",
+    "title": "Pico roadmap call",
+    "started": "2026-10-21T15:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_pico"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7781244",
+    "title": "Vantor go-live follow-up",
+    "started": "2026-10-19T13:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_vantor"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7780921",
+    "title": "Lumen check-in",
+    "started": "2026-10-15T09:30:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_lumen"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7780412",
+    "title": "Bloom check-in",
+    "started": "2026-10-08T11:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_bloom"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7773002",
+    "title": "Orbit Q3 review",
+    "started": "2026-08-10T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_orbit"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760000",
+    "title": "Alder & Finch Home check-in",
+    "started": "2026-10-13T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_alder"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760001",
+    "title": "Amberline Pet Supply check-in",
+    "started": "2026-10-25T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_amberline"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760002",
+    "title": "Arcadia Bike Works check-in",
+    "started": "2026-10-11T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_arcadia"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760003",
+    "title": "Bluefen Outdoor check-in",
+    "started": "2026-09-18T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_bluefen"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760004",
+    "title": "Brightwell Pharmacy check-in",
+    "started": "2026-10-12T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_brightwell"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760005",
+    "title": "Cedar Lane Books check-in",
+    "started": "2026-10-12T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_cedarlane"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 1
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760006",
+    "title": "Copperleaf Coffee check-in",
+    "started": "2026-10-20T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_copperleaf"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760007",
+    "title": "Driftwood Surf Co check-in",
+    "started": "2026-10-13T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_driftwood"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760008",
+    "title": "Elmhurst Furniture check-in",
+    "started": "2026-10-24T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_elmhurst"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760009",
+    "title": "Fernhill Garden check-in",
+    "started": "2026-10-05T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_fernhill"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760010",
+    "title": "Foxglove Beauty check-in",
+    "started": "2026-09-28T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_foxglove"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760011",
+    "title": "Glasswing Optics check-in",
+    "started": "2026-09-19T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_glasswing"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760012",
+    "title": "Goldcrest Jewelers check-in",
+    "started": "2026-09-20T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_goldcrest"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760013",
+    "title": "Harbourlight Ferries check-in",
+    "started": "2026-10-03T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_harbourlight"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760014",
+    "title": "Hazelwood Toys check-in",
+    "started": "2026-09-30T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_hazelwood"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760015",
+    "title": "Ironbridge Tools check-in",
+    "started": "2026-09-27T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_ironbridge"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760016",
+    "title": "Juniper Wellness check-in",
+    "started": "2026-09-17T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_juniper"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760017",
+    "title": "Kingfisher Sports check-in",
+    "started": "2026-10-18T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_kingfisher"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760018",
+    "title": "Larkspur Flowers check-in",
+    "started": "2026-10-04T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_larkspur"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760019",
+    "title": "Marlowe Stationery check-in",
+    "started": "2026-10-12T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_marlowe"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 1
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760020",
+    "title": "Meadowbank Dairy check-in",
+    "started": "2026-10-01T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_meadowbank"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760021",
+    "title": "Nettlefield Tea check-in",
+    "started": "2026-09-18T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_nettlefield"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760022",
+    "title": "Oakhaven Camping check-in",
+    "started": "2026-10-28T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_oakhaven"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760023",
+    "title": "Pebblecreek Shoes check-in",
+    "started": "2026-09-20T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_pebblecreek"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760024",
+    "title": "Quillon Audio check-in",
+    "started": "2026-09-15T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_quillon"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760025",
+    "title": "Redwing Cycles check-in",
+    "started": "2026-10-19T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_redwing"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760026",
+    "title": "Saltmarsh Seafood check-in",
+    "started": "2026-09-11T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_saltmarsh"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760027",
+    "title": "Silverbirch Kitchens check-in",
+    "started": "2026-10-12T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_silverbirch"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760028",
+    "title": "Thistledown Yarn check-in",
+    "started": "2026-09-14T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_thistledown"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760029",
+    "title": "Tidewater Cruises check-in",
+    "started": "2026-09-18T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_tidewater"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760030",
+    "title": "Umberline Paints check-in",
+    "started": "2026-10-12T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_umberline"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 1
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760031",
+    "title": "Wrenfield Electronics check-in",
+    "started": "2026-10-04T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_wrenfield"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760032",
+    "title": "Yarrow Organics check-in",
+    "started": "2026-10-27T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_yarrow"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  },
+  {
+   "metaData": {
+    "id": "7760033",
+    "title": "Zephyr Scooters check-in",
+    "started": "2026-09-17T10:00:00Z",
+    "duration": 2700,
+    "system": "Google Meet",
+    "scope": "External"
+   },
+   "context": [
+    {
+     "system": "Salesforce",
+     "objects": [
+      {
+       "objectType": "Account",
+       "objectId": "001_zephyr"
+      }
+     ]
+    }
+   ],
+   "content": {
+    "trackers": [
+     {
+      "name": "Competitors",
+      "count": 0
+     }
+    ]
+   }
+  }
+ ]
+}

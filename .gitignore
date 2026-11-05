@@ -1,0 +1,15 @@
+# secrets: never commit these
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# web
+node_modules/
+dist/
+.vercel/

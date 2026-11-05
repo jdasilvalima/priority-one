@@ -1,0 +1,2421 @@
+{
+ "as_of": "2026-11-02T07:00:00Z",
+ "accounts": {
+  "totalSize": 42,
+  "done": true,
+  "records": [
+   {
+    "Id": "001_northwind",
+    "Name": "Northwind Apparel",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 2400000,
+    "Merchant_Account_Code__c": "NWAPP_ECOM",
+    "Sub_Vertical__c": "Fashion e-commerce",
+    "Go_Live_Date__c": "2024-03-12"
+   },
+   {
+    "Id": "001_kestrel",
+    "Name": "Kestrel Travel Group",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 3100000,
+    "Merchant_Account_Code__c": "KTG_ECOM",
+    "Sub_Vertical__c": "Online travel",
+    "Go_Live_Date__c": "2023-11-06"
+   },
+   {
+    "Id": "001_halcyon",
+    "Name": "Halcyon Hotels",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 420000,
+    "Merchant_Account_Code__c": "HALCY_ECOM",
+    "Sub_Vertical__c": "Hospitality",
+    "Go_Live_Date__c": "2024-06-03"
+   },
+   {
+    "Id": "001_pico",
+    "Name": "Pico Subscriptions",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 310000,
+    "Merchant_Account_Code__c": "PICO_ECOM",
+    "Sub_Vertical__c": "Subscription boxes",
+    "Go_Live_Date__c": "2024-09-16"
+   },
+   {
+    "Id": "001_vantor",
+    "Name": "Vantor Gaming",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1600000,
+    "Merchant_Account_Code__c": "VANTR_ECOM",
+    "Sub_Vertical__c": "Online gaming",
+    "Go_Live_Date__c": "2026-08-19"
+   },
+   {
+    "Id": "001_lumen",
+    "Name": "Lumen Mobility",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 540000,
+    "Merchant_Account_Code__c": "LUMEN_ECOM",
+    "Sub_Vertical__c": "Urban mobility",
+    "Go_Live_Date__c": "2024-02-05"
+   },
+   {
+    "Id": "001_bloom",
+    "Name": "Bloom & Co Grocers",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 85000,
+    "Merchant_Account_Code__c": "BLOOM_ECOM",
+    "Sub_Vertical__c": "Grocery",
+    "Go_Live_Date__c": "2025-01-20"
+   },
+   {
+    "Id": "001_orbit",
+    "Name": "Orbit Ticketing",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 260000,
+    "Merchant_Account_Code__c": "ORBIT_ECOM",
+    "Sub_Vertical__c": "Event ticketing",
+    "Go_Live_Date__c": "2024-10-14"
+   },
+   {
+    "Id": "001_alder",
+    "Name": "Alder & Finch Home",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 755000,
+    "Merchant_Account_Code__c": "ALDER_ECOM",
+    "Sub_Vertical__c": "Home goods",
+    "Go_Live_Date__c": "2024-03-11"
+   },
+   {
+    "Id": "001_amberline",
+    "Name": "Amberline Pet Supply",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 835000,
+    "Merchant_Account_Code__c": "AMBER_ECOM",
+    "Sub_Vertical__c": "Pet supplies",
+    "Go_Live_Date__c": "2023-12-21"
+   },
+   {
+    "Id": "001_arcadia",
+    "Name": "Arcadia Bike Works",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 85000,
+    "Merchant_Account_Code__c": "ARCAD_ECOM",
+    "Sub_Vertical__c": "Sporting goods",
+    "Go_Live_Date__c": "2023-05-06"
+   },
+   {
+    "Id": "001_bluefen",
+    "Name": "Bluefen Outdoor",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 855000,
+    "Merchant_Account_Code__c": "BLUEF_ECOM",
+    "Sub_Vertical__c": "Outdoor gear",
+    "Go_Live_Date__c": "2025-06-02"
+   },
+   {
+    "Id": "001_brightwell",
+    "Name": "Brightwell Pharmacy",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1655000,
+    "Merchant_Account_Code__c": "BRIGH_ECOM",
+    "Sub_Vertical__c": "Health retail",
+    "Go_Live_Date__c": "2023-03-18"
+   },
+   {
+    "Id": "001_cedarlane",
+    "Name": "Cedar Lane Books",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 600000,
+    "Merchant_Account_Code__c": "CEDAR_ECOM",
+    "Sub_Vertical__c": "Books",
+    "Go_Live_Date__c": "2025-05-26"
+   },
+   {
+    "Id": "001_copperleaf",
+    "Name": "Copperleaf Coffee",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 250000,
+    "Merchant_Account_Code__c": "COPPE_ECOM",
+    "Sub_Vertical__c": "Food and drink",
+    "Go_Live_Date__c": "2024-09-27"
+   },
+   {
+    "Id": "001_driftwood",
+    "Name": "Driftwood Surf Co",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 140000,
+    "Merchant_Account_Code__c": "DRIFT_ECOM",
+    "Sub_Vertical__c": "Sporting goods",
+    "Go_Live_Date__c": "2023-07-04"
+   },
+   {
+    "Id": "001_elmhurst",
+    "Name": "Elmhurst Furniture",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 875000,
+    "Merchant_Account_Code__c": "ELMHU_ECOM",
+    "Sub_Vertical__c": "Home goods",
+    "Go_Live_Date__c": "2023-04-15"
+   },
+   {
+    "Id": "001_fernhill",
+    "Name": "Fernhill Garden",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 900000,
+    "Merchant_Account_Code__c": "FERNH_ECOM",
+    "Sub_Vertical__c": "Home goods",
+    "Go_Live_Date__c": "2023-11-29"
+   },
+   {
+    "Id": "001_foxglove",
+    "Name": "Foxglove Beauty",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1575000,
+    "Merchant_Account_Code__c": "FOXGL_ECOM",
+    "Sub_Vertical__c": "Beauty",
+    "Go_Live_Date__c": "2024-11-18"
+   },
+   {
+    "Id": "001_glasswing",
+    "Name": "Glasswing Optics",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 595000,
+    "Merchant_Account_Code__c": "GLASS_ECOM",
+    "Sub_Vertical__c": "Health retail",
+    "Go_Live_Date__c": "2024-01-03"
+   },
+   {
+    "Id": "001_goldcrest",
+    "Name": "Goldcrest Jewelers",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 695000,
+    "Merchant_Account_Code__c": "GOLDC_ECOM",
+    "Sub_Vertical__c": "Luxury",
+    "Go_Live_Date__c": "2024-06-03"
+   },
+   {
+    "Id": "001_harbourlight",
+    "Name": "Harbourlight Ferries",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 810000,
+    "Merchant_Account_Code__c": "HARBO_ECOM",
+    "Sub_Vertical__c": "Travel",
+    "Go_Live_Date__c": "2023-08-11"
+   },
+   {
+    "Id": "001_hazelwood",
+    "Name": "Hazelwood Toys",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1030000,
+    "Merchant_Account_Code__c": "HAZEL_ECOM",
+    "Sub_Vertical__c": "Toys",
+    "Go_Live_Date__c": "2023-06-04"
+   },
+   {
+    "Id": "001_ironbridge",
+    "Name": "Ironbridge Tools",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1490000,
+    "Merchant_Account_Code__c": "IRONB_ECOM",
+    "Sub_Vertical__c": "Hardware",
+    "Go_Live_Date__c": "2024-02-06"
+   },
+   {
+    "Id": "001_juniper",
+    "Name": "Juniper Wellness",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1655000,
+    "Merchant_Account_Code__c": "JUNIP_ECOM",
+    "Sub_Vertical__c": "Health retail",
+    "Go_Live_Date__c": "2025-06-06"
+   },
+   {
+    "Id": "001_kingfisher",
+    "Name": "Kingfisher Sports",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 870000,
+    "Merchant_Account_Code__c": "KINGF_ECOM",
+    "Sub_Vertical__c": "Sporting goods",
+    "Go_Live_Date__c": "2023-11-13"
+   },
+   {
+    "Id": "001_larkspur",
+    "Name": "Larkspur Flowers",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1650000,
+    "Merchant_Account_Code__c": "LARKS_ECOM",
+    "Sub_Vertical__c": "Gifts",
+    "Go_Live_Date__c": "2023-10-22"
+   },
+   {
+    "Id": "001_marlowe",
+    "Name": "Marlowe Stationery",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 65000,
+    "Merchant_Account_Code__c": "MARLO_ECOM",
+    "Sub_Vertical__c": "Office supplies",
+    "Go_Live_Date__c": "2024-10-09"
+   },
+   {
+    "Id": "001_meadowbank",
+    "Name": "Meadowbank Dairy",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1645000,
+    "Merchant_Account_Code__c": "MEADO_ECOM",
+    "Sub_Vertical__c": "Grocery",
+    "Go_Live_Date__c": "2023-10-21"
+   },
+   {
+    "Id": "001_nettlefield",
+    "Name": "Nettlefield Tea",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 900000,
+    "Merchant_Account_Code__c": "NETTL_ECOM",
+    "Sub_Vertical__c": "Food and drink",
+    "Go_Live_Date__c": "2023-10-13"
+   },
+   {
+    "Id": "001_oakhaven",
+    "Name": "Oakhaven Camping",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1320000,
+    "Merchant_Account_Code__c": "OAKHA_ECOM",
+    "Sub_Vertical__c": "Outdoor gear",
+    "Go_Live_Date__c": "2023-02-06"
+   },
+   {
+    "Id": "001_pebblecreek",
+    "Name": "Pebblecreek Shoes",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1285000,
+    "Merchant_Account_Code__c": "PEBBL_ECOM",
+    "Sub_Vertical__c": "Fashion e-commerce",
+    "Go_Live_Date__c": "2023-04-16"
+   },
+   {
+    "Id": "001_quillon",
+    "Name": "Quillon Audio",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 220000,
+    "Merchant_Account_Code__c": "QUILL_ECOM",
+    "Sub_Vertical__c": "Electronics",
+    "Go_Live_Date__c": "2023-04-12"
+   },
+   {
+    "Id": "001_redwing",
+    "Name": "Redwing Cycles",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1060000,
+    "Merchant_Account_Code__c": "REDWI_ECOM",
+    "Sub_Vertical__c": "Sporting goods",
+    "Go_Live_Date__c": "2025-04-01"
+   },
+   {
+    "Id": "001_saltmarsh",
+    "Name": "Saltmarsh Seafood",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1760000,
+    "Merchant_Account_Code__c": "SALTM_ECOM",
+    "Sub_Vertical__c": "Grocery",
+    "Go_Live_Date__c": "2024-12-21"
+   },
+   {
+    "Id": "001_silverbirch",
+    "Name": "Silverbirch Kitchens",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1055000,
+    "Merchant_Account_Code__c": "SILVE_ECOM",
+    "Sub_Vertical__c": "Home goods",
+    "Go_Live_Date__c": "2024-11-04"
+   },
+   {
+    "Id": "001_thistledown",
+    "Name": "Thistledown Yarn",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1085000,
+    "Merchant_Account_Code__c": "THIST_ECOM",
+    "Sub_Vertical__c": "Crafts",
+    "Go_Live_Date__c": "2024-01-30"
+   },
+   {
+    "Id": "001_tidewater",
+    "Name": "Tidewater Cruises",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 240000,
+    "Merchant_Account_Code__c": "TIDEW_ECOM",
+    "Sub_Vertical__c": "Travel",
+    "Go_Live_Date__c": "2023-12-03"
+   },
+   {
+    "Id": "001_umberline",
+    "Name": "Umberline Paints",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 655000,
+    "Merchant_Account_Code__c": "UMBER_ECOM",
+    "Sub_Vertical__c": "Hardware",
+    "Go_Live_Date__c": "2023-12-04"
+   },
+   {
+    "Id": "001_wrenfield",
+    "Name": "Wrenfield Electronics",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1530000,
+    "Merchant_Account_Code__c": "WRENF_ECOM",
+    "Sub_Vertical__c": "Electronics",
+    "Go_Live_Date__c": "2023-08-17"
+   },
+   {
+    "Id": "001_yarrow",
+    "Name": "Yarrow Organics",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1800000,
+    "Merchant_Account_Code__c": "YARRO_ECOM",
+    "Sub_Vertical__c": "Grocery",
+    "Go_Live_Date__c": "2024-03-06"
+   },
+   {
+    "Id": "001_zephyr",
+    "Name": "Zephyr Scooters",
+    "OwnerId": "005_rosa",
+    "Annual_Revenue_To_Us__c": 1725000,
+    "Merchant_Account_Code__c": "ZEPHY_ECOM",
+    "Sub_Vertical__c": "Urban mobility",
+    "Go_Live_Date__c": "2025-04-12"
+   }
+  ]
+ },
+ "users": {
+  "totalSize": 1,
+  "done": true,
+  "records": [
+   {
+    "Id": "005_rosa",
+    "Name": "Rosa D.",
+    "Title": "Account Manager"
+   }
+  ]
+ },
+ "contact_roles": {
+  "totalSize": 54,
+  "done": true,
+  "records": [
+   {
+    "AccountId": "001_northwind",
+    "ContactId": "003_jana_weber",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Jana Weber",
+     "Title": "Head of Payments Ops"
+    }
+   },
+   {
+    "AccountId": "001_kestrel",
+    "ContactId": "003_marc_dubois",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Marc Dubois",
+     "Title": "CFO"
+    }
+   },
+   {
+    "AccountId": "001_halcyon",
+    "ContactId": "003_siobhan_kelly",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Siobhan Kelly",
+     "Title": "Finance Director"
+    }
+   },
+   {
+    "AccountId": "001_pico",
+    "ContactId": "003_ana_ruiz",
+    "Role": "Champion",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Ana Ruiz",
+     "Title": "Head of Payments"
+    }
+   },
+   {
+    "AccountId": "001_vantor",
+    "ContactId": "003_erik_lund",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Erik Lund",
+     "Title": "COO"
+    }
+   },
+   {
+    "AccountId": "001_lumen",
+    "ContactId": "003_nadia_haddad",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Nadia Haddad",
+     "Title": "Operations Director"
+    }
+   },
+   {
+    "AccountId": "001_bloom",
+    "ContactId": "003_pieter_vos",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Pieter Vos",
+     "Title": "Owner"
+    }
+   },
+   {
+    "AccountId": "001_orbit",
+    "ContactId": "003_lea_martin",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Lea Martin",
+     "Title": "Head of Partnerships"
+    }
+   },
+   {
+    "AccountId": "001_alder",
+    "ContactId": "003_mila_keller_0",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Mila Keller",
+     "Title": "CFO"
+    }
+   },
+   {
+    "AccountId": "001_alder",
+    "ContactId": "003_champion_0",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Mila Novak",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_amberline",
+    "ContactId": "003_jonas_lindqvist_1",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Jonas Lindqvist",
+     "Title": "Head of Payments"
+    }
+   },
+   {
+    "AccountId": "001_arcadia",
+    "ContactId": "003_priya_costa_2",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Priya Costa",
+     "Title": "Finance Director"
+    }
+   },
+   {
+    "AccountId": "001_bluefen",
+    "ContactId": "003_tomas_weiss_3",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Tomas Weiss",
+     "Title": "COO"
+    }
+   },
+   {
+    "AccountId": "001_bluefen",
+    "ContactId": "003_champion_3",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Tomas Rao",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_brightwell",
+    "ContactId": "003_elena_rao_4",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Elena Rao",
+     "Title": "Head of E-commerce"
+    }
+   },
+   {
+    "AccountId": "001_cedarlane",
+    "ContactId": "003_noah_bakker_5",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Noah Bakker",
+     "Title": "CFO"
+    }
+   },
+   {
+    "AccountId": "001_copperleaf",
+    "ContactId": "003_ines_okafor_6",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Ines Okafor",
+     "Title": "Head of Payments"
+    }
+   },
+   {
+    "AccountId": "001_copperleaf",
+    "ContactId": "003_champion_6",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Ines Lindqvist",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_driftwood",
+    "ContactId": "003_lars_novak_7",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Lars Novak",
+     "Title": "Finance Director"
+    }
+   },
+   {
+    "AccountId": "001_elmhurst",
+    "ContactId": "003_amara_moreau_8",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Amara Moreau",
+     "Title": "COO"
+    }
+   },
+   {
+    "AccountId": "001_fernhill",
+    "ContactId": "003_felix_hansen_9",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Felix Hansen",
+     "Title": "Head of E-commerce"
+    }
+   },
+   {
+    "AccountId": "001_fernhill",
+    "ContactId": "003_champion_9",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Felix Moreau",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_foxglove",
+    "ContactId": "003_mila_keller_10",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Mila Keller",
+     "Title": "CFO"
+    }
+   },
+   {
+    "AccountId": "001_glasswing",
+    "ContactId": "003_jonas_lindqvist_11",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Jonas Lindqvist",
+     "Title": "Head of Payments"
+    }
+   },
+   {
+    "AccountId": "001_goldcrest",
+    "ContactId": "003_priya_costa_12",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Priya Costa",
+     "Title": "Finance Director"
+    }
+   },
+   {
+    "AccountId": "001_goldcrest",
+    "ContactId": "003_champion_12",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Priya Bakker",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_harbourlight",
+    "ContactId": "003_tomas_weiss_13",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Tomas Weiss",
+     "Title": "COO"
+    }
+   },
+   {
+    "AccountId": "001_hazelwood",
+    "ContactId": "003_elena_rao_14",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Elena Rao",
+     "Title": "Head of E-commerce"
+    }
+   },
+   {
+    "AccountId": "001_ironbridge",
+    "ContactId": "003_noah_bakker_15",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Noah Bakker",
+     "Title": "CFO"
+    }
+   },
+   {
+    "AccountId": "001_ironbridge",
+    "ContactId": "003_champion_15",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Noah Costa",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_juniper",
+    "ContactId": "003_ines_okafor_16",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Ines Okafor",
+     "Title": "Head of Payments"
+    }
+   },
+   {
+    "AccountId": "001_kingfisher",
+    "ContactId": "003_lars_novak_17",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Lars Novak",
+     "Title": "Finance Director"
+    }
+   },
+   {
+    "AccountId": "001_larkspur",
+    "ContactId": "003_amara_moreau_18",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Amara Moreau",
+     "Title": "COO"
+    }
+   },
+   {
+    "AccountId": "001_larkspur",
+    "ContactId": "003_champion_18",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Amara Hansen",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_marlowe",
+    "ContactId": "003_felix_hansen_19",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Felix Hansen",
+     "Title": "Head of E-commerce"
+    }
+   },
+   {
+    "AccountId": "001_meadowbank",
+    "ContactId": "003_mila_keller_20",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Mila Keller",
+     "Title": "CFO"
+    }
+   },
+   {
+    "AccountId": "001_nettlefield",
+    "ContactId": "003_jonas_lindqvist_21",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Jonas Lindqvist",
+     "Title": "Head of Payments"
+    }
+   },
+   {
+    "AccountId": "001_nettlefield",
+    "ContactId": "003_champion_21",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Jonas Okafor",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_oakhaven",
+    "ContactId": "003_priya_costa_22",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Priya Costa",
+     "Title": "Finance Director"
+    }
+   },
+   {
+    "AccountId": "001_pebblecreek",
+    "ContactId": "003_tomas_weiss_23",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Tomas Weiss",
+     "Title": "COO"
+    }
+   },
+   {
+    "AccountId": "001_quillon",
+    "ContactId": "003_elena_rao_24",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Elena Rao",
+     "Title": "Head of E-commerce"
+    }
+   },
+   {
+    "AccountId": "001_quillon",
+    "ContactId": "003_champion_24",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Elena Weiss",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_redwing",
+    "ContactId": "003_noah_bakker_25",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Noah Bakker",
+     "Title": "CFO"
+    }
+   },
+   {
+    "AccountId": "001_saltmarsh",
+    "ContactId": "003_ines_okafor_26",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Ines Okafor",
+     "Title": "Head of Payments"
+    }
+   },
+   {
+    "AccountId": "001_silverbirch",
+    "ContactId": "003_lars_novak_27",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Lars Novak",
+     "Title": "Finance Director"
+    }
+   },
+   {
+    "AccountId": "001_silverbirch",
+    "ContactId": "003_champion_27",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Lars Keller",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_thistledown",
+    "ContactId": "003_amara_moreau_28",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Amara Moreau",
+     "Title": "COO"
+    }
+   },
+   {
+    "AccountId": "001_tidewater",
+    "ContactId": "003_felix_hansen_29",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Felix Hansen",
+     "Title": "Head of E-commerce"
+    }
+   },
+   {
+    "AccountId": "001_umberline",
+    "ContactId": "003_mila_keller_30",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Mila Keller",
+     "Title": "CFO"
+    }
+   },
+   {
+    "AccountId": "001_umberline",
+    "ContactId": "003_champion_30",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Mila Novak",
+     "Title": "Payments Lead"
+    }
+   },
+   {
+    "AccountId": "001_wrenfield",
+    "ContactId": "003_jonas_lindqvist_31",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Jonas Lindqvist",
+     "Title": "Head of Payments"
+    }
+   },
+   {
+    "AccountId": "001_yarrow",
+    "ContactId": "003_priya_costa_32",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Priya Costa",
+     "Title": "Finance Director"
+    }
+   },
+   {
+    "AccountId": "001_zephyr",
+    "ContactId": "003_tomas_weiss_33",
+    "Role": "Decision Maker",
+    "IsPrimary": true,
+    "Contact": {
+     "Name": "Tomas Weiss",
+     "Title": "COO"
+    }
+   },
+   {
+    "AccountId": "001_zephyr",
+    "ContactId": "003_champion_33",
+    "Role": "Champion",
+    "IsPrimary": false,
+    "Contact": {
+     "Name": "Tomas Rao",
+     "Title": "Payments Lead"
+    }
+   }
+  ]
+ },
+ "contracts": {
+  "totalSize": 42,
+  "done": true,
+  "records": [
+   {
+    "Id": "800_northwind",
+    "AccountId": "001_northwind",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-09-30",
+    "Committed_Monthly_Volume__c": 200000
+   },
+   {
+    "Id": "800_kestrel",
+    "AccountId": "001_kestrel",
+    "StartDate": "2024-01-01",
+    "EndDate": "2026-12-11",
+    "Committed_Monthly_Volume__c": 260000
+   },
+   {
+    "Id": "800_halcyon",
+    "AccountId": "001_halcyon",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-06-30",
+    "Committed_Monthly_Volume__c": 30000
+   },
+   {
+    "Id": "800_pico",
+    "AccountId": "001_pico",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-01-05",
+    "Committed_Monthly_Volume__c": 22000
+   },
+   {
+    "Id": "800_vantor",
+    "AccountId": "001_vantor",
+    "StartDate": "2024-01-01",
+    "EndDate": "2028-08-18",
+    "Committed_Monthly_Volume__c": 300000
+   },
+   {
+    "Id": "800_lumen",
+    "AccountId": "001_lumen",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-08-31",
+    "Committed_Monthly_Volume__c": 40000
+   },
+   {
+    "Id": "800_bloom",
+    "AccountId": "001_bloom",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-05-31",
+    "Committed_Monthly_Volume__c": 6000
+   },
+   {
+    "Id": "800_orbit",
+    "AccountId": "001_orbit",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-10-31",
+    "Committed_Monthly_Volume__c": 18000
+   },
+   {
+    "Id": "800_alder",
+    "AccountId": "001_alder",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-11-05",
+    "Committed_Monthly_Volume__c": 68000.0
+   },
+   {
+    "Id": "800_amberline",
+    "AccountId": "001_amberline",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-03-12",
+    "Committed_Monthly_Volume__c": 75200.0
+   },
+   {
+    "Id": "800_arcadia",
+    "AccountId": "001_arcadia",
+    "StartDate": "2024-01-01",
+    "EndDate": "2026-11-22",
+    "Committed_Monthly_Volume__c": 7600.0
+   },
+   {
+    "Id": "800_bluefen",
+    "AccountId": "001_bluefen",
+    "StartDate": "2024-01-01",
+    "EndDate": "2028-03-15",
+    "Committed_Monthly_Volume__c": 77000.0
+   },
+   {
+    "Id": "800_brightwell",
+    "AccountId": "001_brightwell",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-05-09",
+    "Committed_Monthly_Volume__c": 149000.0
+   },
+   {
+    "Id": "800_cedarlane",
+    "AccountId": "001_cedarlane",
+    "StartDate": "2024-01-01",
+    "EndDate": "2028-03-24",
+    "Committed_Monthly_Volume__c": 54000.0
+   },
+   {
+    "Id": "800_copperleaf",
+    "AccountId": "001_copperleaf",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-09-25",
+    "Committed_Monthly_Volume__c": 22500.0
+   },
+   {
+    "Id": "800_driftwood",
+    "AccountId": "001_driftwood",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-08-12",
+    "Committed_Monthly_Volume__c": 12600.0
+   },
+   {
+    "Id": "800_elmhurst",
+    "AccountId": "001_elmhurst",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-09-27",
+    "Committed_Monthly_Volume__c": 78800.0
+   },
+   {
+    "Id": "800_fernhill",
+    "AccountId": "001_fernhill",
+    "StartDate": "2024-01-01",
+    "EndDate": "2028-04-05",
+    "Committed_Monthly_Volume__c": 81000.0
+   },
+   {
+    "Id": "800_foxglove",
+    "AccountId": "001_foxglove",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-03-31",
+    "Committed_Monthly_Volume__c": 141800.0
+   },
+   {
+    "Id": "800_glasswing",
+    "AccountId": "001_glasswing",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-05-19",
+    "Committed_Monthly_Volume__c": 53600.0
+   },
+   {
+    "Id": "800_goldcrest",
+    "AccountId": "001_goldcrest",
+    "StartDate": "2024-01-01",
+    "EndDate": "2028-02-28",
+    "Committed_Monthly_Volume__c": 62600.0
+   },
+   {
+    "Id": "800_harbourlight",
+    "AccountId": "001_harbourlight",
+    "StartDate": "2024-01-01",
+    "EndDate": "2026-12-03",
+    "Committed_Monthly_Volume__c": 72900.0
+   },
+   {
+    "Id": "800_hazelwood",
+    "AccountId": "001_hazelwood",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-12-25",
+    "Committed_Monthly_Volume__c": 92700.0
+   },
+   {
+    "Id": "800_ironbridge",
+    "AccountId": "001_ironbridge",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-04-01",
+    "Committed_Monthly_Volume__c": 134100.0
+   },
+   {
+    "Id": "800_juniper",
+    "AccountId": "001_juniper",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-12-04",
+    "Committed_Monthly_Volume__c": 149000.0
+   },
+   {
+    "Id": "800_kingfisher",
+    "AccountId": "001_kingfisher",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-05-26",
+    "Committed_Monthly_Volume__c": 78300.0
+   },
+   {
+    "Id": "800_larkspur",
+    "AccountId": "001_larkspur",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-03-26",
+    "Committed_Monthly_Volume__c": 148500.0
+   },
+   {
+    "Id": "800_marlowe",
+    "AccountId": "001_marlowe",
+    "StartDate": "2024-01-01",
+    "EndDate": "2028-06-11",
+    "Committed_Monthly_Volume__c": 5800.0
+   },
+   {
+    "Id": "800_meadowbank",
+    "AccountId": "001_meadowbank",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-10-19",
+    "Committed_Monthly_Volume__c": 148000.0
+   },
+   {
+    "Id": "800_nettlefield",
+    "AccountId": "001_nettlefield",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-07-03",
+    "Committed_Monthly_Volume__c": 81000.0
+   },
+   {
+    "Id": "800_oakhaven",
+    "AccountId": "001_oakhaven",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-05-16",
+    "Committed_Monthly_Volume__c": 118800.0
+   },
+   {
+    "Id": "800_pebblecreek",
+    "AccountId": "001_pebblecreek",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-05-29",
+    "Committed_Monthly_Volume__c": 115600.0
+   },
+   {
+    "Id": "800_quillon",
+    "AccountId": "001_quillon",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-04-03",
+    "Committed_Monthly_Volume__c": 19800.0
+   },
+   {
+    "Id": "800_redwing",
+    "AccountId": "001_redwing",
+    "StartDate": "2024-01-01",
+    "EndDate": "2028-01-03",
+    "Committed_Monthly_Volume__c": 95400.0
+   },
+   {
+    "Id": "800_saltmarsh",
+    "AccountId": "001_saltmarsh",
+    "StartDate": "2024-01-01",
+    "EndDate": "2028-02-02",
+    "Committed_Monthly_Volume__c": 158400.0
+   },
+   {
+    "Id": "800_silverbirch",
+    "AccountId": "001_silverbirch",
+    "StartDate": "2024-01-01",
+    "EndDate": "2026-12-17",
+    "Committed_Monthly_Volume__c": 95000.0
+   },
+   {
+    "Id": "800_thistledown",
+    "AccountId": "001_thistledown",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-05-23",
+    "Committed_Monthly_Volume__c": 97600.0
+   },
+   {
+    "Id": "800_tidewater",
+    "AccountId": "001_tidewater",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-12-28",
+    "Committed_Monthly_Volume__c": 21600.0
+   },
+   {
+    "Id": "800_umberline",
+    "AccountId": "001_umberline",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-09-03",
+    "Committed_Monthly_Volume__c": 59000.0
+   },
+   {
+    "Id": "800_wrenfield",
+    "AccountId": "001_wrenfield",
+    "StartDate": "2024-01-01",
+    "EndDate": "2028-04-20",
+    "Committed_Monthly_Volume__c": 137700.0
+   },
+   {
+    "Id": "800_yarrow",
+    "AccountId": "001_yarrow",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-12-28",
+    "Committed_Monthly_Volume__c": 162000.0
+   },
+   {
+    "Id": "800_zephyr",
+    "AccountId": "001_zephyr",
+    "StartDate": "2024-01-01",
+    "EndDate": "2027-12-26",
+    "Committed_Monthly_Volume__c": 155200.0
+   }
+  ]
+ },
+ "opportunities": {
+  "totalSize": 5,
+  "done": true,
+  "records": [
+   {
+    "Id": "006_kestrel_renewal",
+    "AccountId": "001_kestrel",
+    "Type": "Renewal",
+    "StageName": "Closed Won",
+    "CloseDate": "2025-12-11",
+    "IsClosed": true
+   },
+   {
+    "Id": "006_kestrel_upsell",
+    "AccountId": "001_kestrel",
+    "Type": "Upsell",
+    "StageName": "Negotiation",
+    "CloseDate": "2027-02-28",
+    "IsClosed": false
+   },
+   {
+    "Id": "006_arcadia_renewal",
+    "AccountId": "001_arcadia",
+    "Type": "Renewal",
+    "StageName": "Negotiation",
+    "CloseDate": "2026-11-22",
+    "IsClosed": false
+   },
+   {
+    "Id": "006_harbourlight_renewal",
+    "AccountId": "001_harbourlight",
+    "Type": "Renewal",
+    "StageName": "Negotiation",
+    "CloseDate": "2026-12-03",
+    "IsClosed": false
+   },
+   {
+    "Id": "006_silverbirch_renewal",
+    "AccountId": "001_silverbirch",
+    "Type": "Renewal",
+    "StageName": "Negotiation",
+    "CloseDate": "2026-12-17",
+    "IsClosed": false
+   }
+  ]
+ },
+ "cases": {
+  "totalSize": 45,
+  "done": true,
+  "records": [
+   {
+    "Id": "500_00481523",
+    "CaseNumber": "00481523",
+    "AccountId": "001_northwind",
+    "Subject": "Card declines since 28 Oct checkout release",
+    "Type": "Technical",
+    "Status": "Escalated",
+    "Priority": "Urgent",
+    "IsEscalated": true,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-29T09:12:00Z",
+    "CaseMilestones": {
+     "totalSize": 1,
+     "done": true,
+     "records": [
+      {
+       "Id": "5pt_2026-10-31",
+       "TargetDate": "2026-10-31T09:12:00Z",
+       "CompletionDate": null,
+       "IsCompleted": false,
+       "IsViolated": true
+      }
+     ]
+    }
+   },
+   {
+    "Id": "500_00481577",
+    "CaseNumber": "00481577",
+    "AccountId": "001_northwind",
+    "Subject": "Refunds failing for one card brand",
+    "Type": "Technical",
+    "Status": "Working",
+    "Priority": "Urgent",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-31T16:40:00Z",
+    "CaseMilestones": {
+     "totalSize": 1,
+     "done": true,
+     "records": [
+      {
+       "Id": "5pt_2026-11-03",
+       "TargetDate": "2026-11-03T16:40:00Z",
+       "CompletionDate": null,
+       "IsCompleted": false,
+       "IsViolated": false
+      }
+     ]
+    }
+   },
+   {
+    "Id": "500_00479902",
+    "CaseNumber": "00479902",
+    "AccountId": "001_halcyon",
+    "Subject": "October payout not received",
+    "Type": "Payout",
+    "Status": "Working",
+    "Priority": "High",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-27T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 1,
+     "done": true,
+     "records": [
+      {
+       "Id": "5pt_2026-10-29",
+       "TargetDate": "2026-10-29T10:00:00Z",
+       "CompletionDate": null,
+       "IsCompleted": false,
+       "IsViolated": true
+      }
+     ]
+    }
+   },
+   {
+    "Id": "500_00480101",
+    "CaseNumber": "00480101",
+    "AccountId": "001_lumen",
+    "Subject": "Webhook retries delayed",
+    "Type": "Technical",
+    "Status": "Closed",
+    "Priority": "Medium",
+    "IsEscalated": false,
+    "IsClosed": true,
+    "CreatedDate": "2026-10-06T08:30:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00480244",
+    "CaseNumber": "00480244",
+    "AccountId": "001_lumen",
+    "Subject": "Report export is slow",
+    "Type": "Technical",
+    "Status": "Closed",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": true,
+    "CreatedDate": "2026-10-13T11:05:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00480590",
+    "CaseNumber": "00480590",
+    "AccountId": "001_lumen",
+    "Subject": "Question on settlement file",
+    "Type": "Finance",
+    "Status": "Working",
+    "Priority": "Medium",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-21T14:20:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00481012",
+    "CaseNumber": "00481012",
+    "AccountId": "001_lumen",
+    "Subject": "New user access request",
+    "Type": "Access",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-28T09:45:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00460099",
+    "CaseNumber": "00460099",
+    "AccountId": "001_alder",
+    "Subject": "Resolved incident",
+    "Type": "Technical",
+    "Status": "Closed",
+    "Priority": "Urgent",
+    "IsEscalated": true,
+    "IsClosed": true,
+    "CreatedDate": "2026-09-03T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00470100",
+    "CaseNumber": "00470100",
+    "AccountId": "001_amberline",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00470200",
+    "CaseNumber": "00470200",
+    "AccountId": "001_arcadia",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00470210",
+    "CaseNumber": "00470210",
+    "AccountId": "001_arcadia",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00470400",
+    "CaseNumber": "00470400",
+    "AccountId": "001_brightwell",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00470500",
+    "CaseNumber": "00470500",
+    "AccountId": "001_cedarlane",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00470510",
+    "CaseNumber": "00470510",
+    "AccountId": "001_cedarlane",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00470700",
+    "CaseNumber": "00470700",
+    "AccountId": "001_driftwood",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00460799",
+    "CaseNumber": "00460799",
+    "AccountId": "001_driftwood",
+    "Subject": "Resolved incident",
+    "Type": "Technical",
+    "Status": "Closed",
+    "Priority": "Urgent",
+    "IsEscalated": true,
+    "IsClosed": true,
+    "CreatedDate": "2026-09-03T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00470800",
+    "CaseNumber": "00470800",
+    "AccountId": "001_elmhurst",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00470810",
+    "CaseNumber": "00470810",
+    "AccountId": "001_elmhurst",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00471000",
+    "CaseNumber": "00471000",
+    "AccountId": "001_foxglove",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00471100",
+    "CaseNumber": "00471100",
+    "AccountId": "001_glasswing",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00471110",
+    "CaseNumber": "00471110",
+    "AccountId": "001_glasswing",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00471300",
+    "CaseNumber": "00471300",
+    "AccountId": "001_harbourlight",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00471400",
+    "CaseNumber": "00471400",
+    "AccountId": "001_hazelwood",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00471410",
+    "CaseNumber": "00471410",
+    "AccountId": "001_hazelwood",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00461499",
+    "CaseNumber": "00461499",
+    "AccountId": "001_hazelwood",
+    "Subject": "Resolved incident",
+    "Type": "Technical",
+    "Status": "Closed",
+    "Priority": "Urgent",
+    "IsEscalated": true,
+    "IsClosed": true,
+    "CreatedDate": "2026-09-03T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00471600",
+    "CaseNumber": "00471600",
+    "AccountId": "001_juniper",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00471700",
+    "CaseNumber": "00471700",
+    "AccountId": "001_kingfisher",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00471710",
+    "CaseNumber": "00471710",
+    "AccountId": "001_kingfisher",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00471900",
+    "CaseNumber": "00471900",
+    "AccountId": "001_marlowe",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472000",
+    "CaseNumber": "00472000",
+    "AccountId": "001_meadowbank",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472010",
+    "CaseNumber": "00472010",
+    "AccountId": "001_meadowbank",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00462199",
+    "CaseNumber": "00462199",
+    "AccountId": "001_nettlefield",
+    "Subject": "Resolved incident",
+    "Type": "Technical",
+    "Status": "Closed",
+    "Priority": "Urgent",
+    "IsEscalated": true,
+    "IsClosed": true,
+    "CreatedDate": "2026-09-03T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472200",
+    "CaseNumber": "00472200",
+    "AccountId": "001_oakhaven",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472300",
+    "CaseNumber": "00472300",
+    "AccountId": "001_pebblecreek",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472310",
+    "CaseNumber": "00472310",
+    "AccountId": "001_pebblecreek",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472500",
+    "CaseNumber": "00472500",
+    "AccountId": "001_redwing",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472600",
+    "CaseNumber": "00472600",
+    "AccountId": "001_saltmarsh",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472610",
+    "CaseNumber": "00472610",
+    "AccountId": "001_saltmarsh",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472800",
+    "CaseNumber": "00472800",
+    "AccountId": "001_thistledown",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00462899",
+    "CaseNumber": "00462899",
+    "AccountId": "001_thistledown",
+    "Subject": "Resolved incident",
+    "Type": "Technical",
+    "Status": "Closed",
+    "Priority": "Urgent",
+    "IsEscalated": true,
+    "IsClosed": true,
+    "CreatedDate": "2026-09-03T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472900",
+    "CaseNumber": "00472900",
+    "AccountId": "001_tidewater",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00472910",
+    "CaseNumber": "00472910",
+    "AccountId": "001_tidewater",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00473100",
+    "CaseNumber": "00473100",
+    "AccountId": "001_wrenfield",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00473200",
+    "CaseNumber": "00473200",
+    "AccountId": "001_yarrow",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-10T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   },
+   {
+    "Id": "500_00473210",
+    "CaseNumber": "00473210",
+    "AccountId": "001_yarrow",
+    "Subject": "Routine question",
+    "Type": "General",
+    "Status": "Working",
+    "Priority": "Low",
+    "IsEscalated": false,
+    "IsClosed": false,
+    "CreatedDate": "2026-10-11T10:00:00Z",
+    "CaseMilestones": {
+     "totalSize": 0,
+     "done": true,
+     "records": []
+    }
+   }
+  ]
+ },
+ "events": {
+  "totalSize": 10,
+  "done": true,
+  "records": [
+   {
+    "Id": "00U_orbit_q3",
+    "WhatId": "001_orbit",
+    "StartDateTime": "2026-08-24T09:00:00Z",
+    "Subject": "Account review"
+   },
+   {
+    "Id": "00U_next_0",
+    "WhatId": "001_alder",
+    "StartDateTime": "2026-11-18T09:00:00Z",
+    "Subject": "Account review"
+   },
+   {
+    "Id": "00U_next_4",
+    "WhatId": "001_brightwell",
+    "StartDateTime": "2026-11-18T09:00:00Z",
+    "Subject": "Account review"
+   },
+   {
+    "Id": "00U_next_8",
+    "WhatId": "001_elmhurst",
+    "StartDateTime": "2026-11-18T09:00:00Z",
+    "Subject": "Account review"
+   },
+   {
+    "Id": "00U_next_12",
+    "WhatId": "001_goldcrest",
+    "StartDateTime": "2026-11-18T09:00:00Z",
+    "Subject": "Account review"
+   },
+   {
+    "Id": "00U_next_16",
+    "WhatId": "001_juniper",
+    "StartDateTime": "2026-11-18T09:00:00Z",
+    "Subject": "Account review"
+   },
+   {
+    "Id": "00U_next_20",
+    "WhatId": "001_meadowbank",
+    "StartDateTime": "2026-11-18T09:00:00Z",
+    "Subject": "Account review"
+   },
+   {
+    "Id": "00U_next_24",
+    "WhatId": "001_quillon",
+    "StartDateTime": "2026-11-18T09:00:00Z",
+    "Subject": "Account review"
+   },
+   {
+    "Id": "00U_next_28",
+    "WhatId": "001_thistledown",
+    "StartDateTime": "2026-11-18T09:00:00Z",
+    "Subject": "Account review"
+   },
+   {
+    "Id": "00U_next_32",
+    "WhatId": "001_yarrow",
+    "StartDateTime": "2026-11-18T09:00:00Z",
+    "Subject": "Account review"
+   }
+  ]
+ },
+ "surveys": {
+  "totalSize": 44,
+  "done": true,
+  "records": [
+   {
+    "Id": "a0S_lumen_q2",
+    "Account__c": "001_lumen",
+    "Score__c": 8,
+    "Responded_At__c": "2026-06-18T10:00:00Z"
+   },
+   {
+    "Id": "a0S_lumen_q3",
+    "Account__c": "001_lumen",
+    "Score__c": 5,
+    "Responded_At__c": "2026-10-20T10:00:00Z"
+   },
+   {
+    "Id": "a0S_bloom_q3",
+    "Account__c": "001_bloom",
+    "Score__c": 6,
+    "Responded_At__c": "2026-10-12T10:00:00Z"
+   },
+   {
+    "Id": "a0S_old_0",
+    "Account__c": "001_alder",
+    "Score__c": 4,
+    "Responded_At__c": "2026-05-10T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_0",
+    "Account__c": "001_alder",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_1",
+    "Account__c": "001_amberline",
+    "Score__c": 10,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_2",
+    "Account__c": "001_arcadia",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_3",
+    "Account__c": "001_bluefen",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_4",
+    "Account__c": "001_brightwell",
+    "Score__c": 8,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_old_5",
+    "Account__c": "001_cedarlane",
+    "Score__c": 4,
+    "Responded_At__c": "2026-05-10T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_5",
+    "Account__c": "001_cedarlane",
+    "Score__c": 10,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_6",
+    "Account__c": "001_copperleaf",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_7",
+    "Account__c": "001_driftwood",
+    "Score__c": 9,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_8",
+    "Account__c": "001_elmhurst",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_9",
+    "Account__c": "001_fernhill",
+    "Score__c": 9,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_old_10",
+    "Account__c": "001_foxglove",
+    "Score__c": 4,
+    "Responded_At__c": "2026-05-10T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_10",
+    "Account__c": "001_foxglove",
+    "Score__c": 9,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_11",
+    "Account__c": "001_glasswing",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_12",
+    "Account__c": "001_goldcrest",
+    "Score__c": 10,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_13",
+    "Account__c": "001_harbourlight",
+    "Score__c": 10,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_14",
+    "Account__c": "001_hazelwood",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_old_15",
+    "Account__c": "001_ironbridge",
+    "Score__c": 4,
+    "Responded_At__c": "2026-05-10T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_15",
+    "Account__c": "001_ironbridge",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_16",
+    "Account__c": "001_juniper",
+    "Score__c": 9,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_17",
+    "Account__c": "001_kingfisher",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_18",
+    "Account__c": "001_larkspur",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_19",
+    "Account__c": "001_marlowe",
+    "Score__c": 9,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_old_20",
+    "Account__c": "001_meadowbank",
+    "Score__c": 4,
+    "Responded_At__c": "2026-05-10T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_20",
+    "Account__c": "001_meadowbank",
+    "Score__c": 8,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_21",
+    "Account__c": "001_nettlefield",
+    "Score__c": 8,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_22",
+    "Account__c": "001_oakhaven",
+    "Score__c": 9,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_23",
+    "Account__c": "001_pebblecreek",
+    "Score__c": 8,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_24",
+    "Account__c": "001_quillon",
+    "Score__c": 8,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_old_25",
+    "Account__c": "001_redwing",
+    "Score__c": 4,
+    "Responded_At__c": "2026-05-10T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_25",
+    "Account__c": "001_redwing",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_26",
+    "Account__c": "001_saltmarsh",
+    "Score__c": 10,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_27",
+    "Account__c": "001_silverbirch",
+    "Score__c": 10,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_28",
+    "Account__c": "001_thistledown",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_29",
+    "Account__c": "001_tidewater",
+    "Score__c": 10,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_old_30",
+    "Account__c": "001_umberline",
+    "Score__c": 4,
+    "Responded_At__c": "2026-05-10T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_30",
+    "Account__c": "001_umberline",
+    "Score__c": 10,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_31",
+    "Account__c": "001_wrenfield",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_32",
+    "Account__c": "001_yarrow",
+    "Score__c": 10,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   },
+   {
+    "Id": "a0S_new_33",
+    "Account__c": "001_zephyr",
+    "Score__c": 7,
+    "Responded_At__c": "2026-09-22T10:00:00Z"
+   }
+  ]
+ }
+}

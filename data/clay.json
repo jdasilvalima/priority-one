@@ -1,0 +1,45 @@
+{
+ "events": [
+  {
+   "event_id": "clay_9012",
+   "type": "job_change",
+   "account_id": "001_pico",
+   "contact_id": "003_ana_ruiz",
+   "contact_name": "Ana Ruiz",
+   "change_type": "left_company",
+   "effective_date": "2026-10-12",
+   "detected_at": "2026-10-14T06:00:00Z",
+   "replacement": {
+    "name": "Tom Hughes",
+    "title": "Head of Payments"
+   }
+  },
+  {
+   "event_id": "clay_8120",
+   "type": "job_change",
+   "account_id": "001_alder",
+   "contact_id": "003_champion_0",
+   "contact_name": "Mila Novak",
+   "change_type": "left_company",
+   "effective_date": "2026-07-05",
+   "detected_at": "2026-07-07T06:00:00Z",
+   "replacement": null
+  },
+  {
+   "event_id": "clay_9044",
+   "type": "job_change",
+   "account_id": "001_bluefen",
+   "contact_id": "003_champion_3",
+   "contact_name": "Tomas Rao",
+   "change_type": "promoted",
+   "effective_date": "2026-10-20",
+   "detected_at": "2026-10-22T06:00:00Z",
+   "replacement": null
+  },
+  {
+   "event_id": "clay_hb_20261101",
+   "type": "heartbeat",
+   "detected_at": "2026-11-01T21:00:00Z"
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+  "version": "2026-11-v1",
+  "tier_points": { "Critical": 50, "High": 30, "Medium": 15, "Low": 5 },
+  "tier_order": ["Critical", "High", "Medium", "Low"],
+  "list_tiers": ["Critical", "High"],
+  "size_bands": [
+    { "band": "Small", "label": "Small, under €100k / yr", "below_eur": 100000, "multiplier": 1 },
+    { "band": "Medium", "label": "Medium, €100k–1M / yr", "up_to_eur": 1000000, "multiplier": 1.5 },
+    { "band": "Large", "label": "Large, over €1M / yr", "multiplier": 2 }
+  ],
+  "effort_bands": [
+    { "band": "Quick", "up_to_minutes": 20 },
+    { "band": "Medium", "up_to_minutes": 60 },
+    { "band": "Heavy" }
+  ],
+  "sources": [
+    { "source": "salesforce", "label": "Salesforce", "max_age_hours": 3 },
+    { "source": "payments", "label": "Payments DB", "max_age_hours": 26 },
+    { "source": "clay", "label": "Clay", "max_age_hours": 48 },
+    { "source": "gong", "label": "Gong", "max_age_hours": 26 }
+  ],
+  "baseline": {
+    "week": "2026-W44",
+    "am_id": "005_rosa",
+    "total": 38,
+    "by_tool": { "salesforce": 14, "gong": 7, "clay": 3, "slack": 11, "payments_dashboard": 3 }
+  },
+  "signals": [
+    {
+      "signal_id": "sig_auth_or_volume_drop",
+      "label": "Auth rate or volume drop",
+      "tier": "Critical",
+      "sources": ["payments"],
+      "rule": "Last 7 days vs previous 28: auth rate down 2 pts or more, or daily volume down 20% or more",
+      "params": { "auth_drop_pts": 2, "volume_drop_pct": 20, "current_days": 7, "baseline_days": 28 }
+    },
+    {
+      "signal_id": "sig_escalated_case",
+      "label": "Escalated support case",
+      "tier": "Critical",
+      "sources": ["salesforce"],
+      "rule": "Open case with IsEscalated true, or Priority Urgent, or a milestone with IsViolated true"
+    },
+    {
+      "signal_id": "sig_competitor_named",
+      "label": "Competitor named on a call",
+      "tier": "Critical",
+      "sources": ["gong"],
+      "rule": "Competitors tracker count above 0 on a call in the last 14 days",
+      "params": { "lookback_days": 14 }
+    },
+    {
+      "signal_id": "sig_champion_left",
+      "label": "Champion left",
+      "tier": "High",
+      "sources": ["clay", "salesforce"],
+      "rule": "Clay sees the contact with Role Champion leave in the last 90 days",
+      "params": { "lookback_days": 90 }
+    },
+    {
+      "signal_id": "sig_renewal_no_opp",
+      "label": "Renewal within 90 days",
+      "tier": "High",
+      "sources": ["salesforce"],
+      "rule": "Contract ends within 90 days and no open Opportunity with Type Renewal",
+      "params": { "window_days": 90 }
+    },
+    {
+      "signal_id": "sig_ramp_below_commit",
+      "label": "Ramp below commitment",
+      "tier": "High",
+      "sources": ["payments", "salesforce"],
+      "rule": "60 days or more since go-live and last 30 days volume at least 25% below the monthly commitment",
+      "params": { "min_days_live": 60, "below_pct": 25, "volume_days": 30 }
+    },
+    {
+      "signal_id": "sig_cases_piling_up",
+      "label": "Support cases piling up",
+      "tier": "Medium",
+      "sources": ["salesforce"],
+      "rule": "3 or more cases created in 30 days",
+      "params": { "min_cases": 3, "window_days": 30 }
+    },
+    {
+      "signal_id": "sig_low_satisfaction",
+      "label": "Low satisfaction score",
+      "tier": "Medium",
+      "sources": ["salesforce"],
+      "rule": "Latest survey score is 6 or below",
+      "params": { "max_score": 6 }
+    },
+    {
+      "signal_id": "sig_no_contact_60d",
+      "label": "No call in 60+ days",
+      "tier": "Low",
+      "sources": ["gong", "salesforce"],
+      "rule": "No Gong call and no Salesforce meeting in 60 days or more",
+      "params": { "min_days": 60 }
+    }
+  ],
+  "actions": [
+    { "action_id": "act_renewal_exec_meeting", "when_all": ["sig_competitor_named", "sig_renewal_no_opp"], "text": "Book a renewal meeting with {primary_contact} and your manager", "effort_minutes": 180, "prepare": ["meeting invite", "value review"] },
+    { "action_id": "act_auth_analysis_call", "when_all": ["sig_auth_or_volume_drop"], "text": "Call {primary_contact} today", "effort_minutes": 45, "prepare": ["decline analysis", "call notes"] },
+    { "action_id": "act_escalated_call", "when_all": ["sig_escalated_case"], "text": "Call {primary_contact} with a fix date from Support", "effort_minutes": 20, "prepare": ["case summary", "support owner"] },
+    { "action_id": "act_competitor_call", "when_all": ["sig_competitor_named"], "text": "Call {primary_contact} and book an exec meeting", "effort_minutes": 60, "prepare": ["call notes"] },
+    { "action_id": "act_new_contact_intro", "when_all": ["sig_champion_left"], "text": "Send an intro email to {new_contact}", "effort_minutes": 10, "prepare": ["intro email draft"] },
+    { "action_id": "act_ramp_review", "when_all": ["sig_ramp_below_commit"], "text": "Ramp review with {primary_contact}: what is not live yet?", "effort_minutes": 60, "prepare": ["volume vs commitment chart"] },
+    { "action_id": "act_renewal_plan", "when_all": ["sig_renewal_no_opp"], "text": "Open the renewal and book a meeting with {primary_contact}", "effort_minutes": 60, "prepare": ["renewal plan"] },
+    { "action_id": "act_case_review", "when_all": ["sig_cases_piling_up"], "text": "Check-in call with {primary_contact} and a case review", "effort_minutes": 30, "prepare": ["case list"] },
+    { "action_id": "act_feedback_call", "when_all": ["sig_low_satisfaction"], "text": "Feedback call with {primary_contact}", "effort_minutes": 30, "prepare": ["survey answers"] },
+    { "action_id": "act_checkin_email", "when_all": ["sig_no_contact_60d"], "text": "Send {primary_contact} a check-in email and propose a QBR", "effort_minutes": 10, "prepare": ["check-in email draft"] }
+  ]
+}
