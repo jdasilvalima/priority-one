@@ -31,7 +31,7 @@
       "label": "Auth rate or volume drop",
       "tier": "Critical",
       "sources": ["payments"],
-      "rule": "Last 7 days vs previous 28: auth rate down 2 pts or more, or daily volume down 20% or more",
+      "rule": "Last {current_days} days vs the previous {baseline_days}: auth rate down {auth_drop_pts} pts or more, or daily volume down {volume_drop_pct}% or more",
       "params": { "auth_drop_pts": 2, "volume_drop_pct": 20, "current_days": 7, "baseline_days": 28 }
     },
     {
@@ -39,14 +39,14 @@
       "label": "Escalated support case",
       "tier": "Critical",
       "sources": ["salesforce"],
-      "rule": "Open case with IsEscalated true, or Priority Urgent, or a milestone with IsViolated true"
+      "rule": "An open case is escalated, urgent or past its SLA"
     },
     {
       "signal_id": "sig_competitor_named",
       "label": "Competitor named on a call",
       "tier": "Critical",
       "sources": ["gong"],
-      "rule": "Competitors tracker count above 0 on a call in the last 14 days",
+      "rule": "A competitor was named on a call in the last {lookback_days} days",
       "params": { "lookback_days": 14 }
     },
     {
@@ -54,7 +54,7 @@
       "label": "Champion left",
       "tier": "High",
       "sources": ["clay", "salesforce"],
-      "rule": "Clay sees the contact with Role Champion leave in the last 90 days",
+      "rule": "Your champion left the company in the last {lookback_days} days",
       "params": { "lookback_days": 90 }
     },
     {
@@ -62,7 +62,7 @@
       "label": "Renewal within 90 days",
       "tier": "High",
       "sources": ["salesforce"],
-      "rule": "Contract ends within 90 days and no open Opportunity with Type Renewal",
+      "rule": "The contract ends within {window_days} days and no renewal opportunity is open",
       "params": { "window_days": 90 }
     },
     {
@@ -70,7 +70,7 @@
       "label": "Ramp below commitment",
       "tier": "High",
       "sources": ["payments", "salesforce"],
-      "rule": "60 days or more since go-live and last 30 days volume at least 25% below the monthly commitment",
+      "rule": "{min_days_live} days or more after go-live, the last {volume_days} days of volume are at least {below_pct}% below the monthly commitment",
       "params": { "min_days_live": 60, "below_pct": 25, "volume_days": 30 }
     },
     {
@@ -78,7 +78,7 @@
       "label": "Support cases piling up",
       "tier": "Medium",
       "sources": ["salesforce"],
-      "rule": "3 or more cases created in 30 days",
+      "rule": "{min_cases} or more cases opened in {window_days} days",
       "params": { "min_cases": 3, "window_days": 30 }
     },
     {
@@ -86,7 +86,7 @@
       "label": "Low satisfaction score",
       "tier": "Medium",
       "sources": ["salesforce"],
-      "rule": "Latest survey score is 6 or below",
+      "rule": "The latest survey score is {max_score} or below",
       "params": { "max_score": 6 }
     },
     {
@@ -94,7 +94,7 @@
       "label": "No call in 60+ days",
       "tier": "Low",
       "sources": ["gong", "salesforce"],
-      "rule": "No Gong call and no Salesforce meeting in 60 days or more",
+      "rule": "No call and no meeting for {min_days} days or more",
       "params": { "min_days": 60 }
     }
   ],

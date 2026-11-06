@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useState } from "react";
 import Card from "./Card.jsx";
+import Scoring, { SCORING_HASH, ScoreStrip } from "./Scoring.jsx";
 import { TIERS, TierPill } from "./tiers.jsx";
 
 // The address of the database stays on the server: the page only knows this route.
 const WEEK_URL = import.meta.env.DEV ? "/week.json" : "/api/week";
 const NOTIFICATION_MS = 7000;
 
-function Header({ user }) {
+function Header({ user, hash }) {
+  const onScoring = hash === SCORING_HASH;
   return (
     <header className="ds-top">
       <div className="ds-in ds-bar">
@@ -14,6 +16,14 @@ function Header({ user }) {
           <i />
           <b>PriorityOne</b>
         </div>
+        <nav className="ds-nav" aria-label="Main">
+          <a href="#" aria-current={onScoring ? undefined : "page"}>
+            This week
+          </a>
+          <a href={SCORING_HASH} aria-current={onScoring ? "page" : undefined}>
+            How scoring works
+          </a>
+        </nav>
         <div className="ds-who">
           <span>
             {user.name} · {user.title} · {user.account_count} accounts
@@ -35,16 +45,11 @@ function Hero({ week }) {
           These are all your accounts with a Critical or High signal from the AM playbook. Each one says why, and the one
           thing to do next. This list replaces {week.alerts.total} alerts you got from {week.alerts.tools} tools last week.
         </p>
-        <div className="ds-strip">
-          <strong>Score =</strong>
-          <span>
-            signal points <em>Critical 50 · High 30 · Medium 15 · Low 5</em>
-          </span>
-          <b>×</b>
-          <span>
-            client size <em>×1 · ×1.5 · ×2</em>
-          </span>
-        </div>
+        <ScoreStrip scoring={week.scoring}>
+          <a className="ds-how" href={SCORING_HASH}>
+            See what each issue is worth →
+          </a>
+        </ScoreStrip>
         <div className="ds-pills">
           <span className="ds-dl">Data</span>
           {week.sources.map((source) => (
@@ -92,7 +97,23 @@ function Notification({ text, onClose }) {
   );
 }
 
+function useHash() {
+  const [hash, setHash] = useState(window.location.hash);
+
+  useEffect(() => {
+    function follow() {
+      setHash(window.location.hash);
+      window.scrollTo(0, 0);
+    }
+    window.addEventListener("hashchange", follow);
+    return () => window.removeEventListener("hashchange", follow);
+  }, []);
+
+  return hash;
+}
+
 export default function App() {
+  const hash = useHash();
   const [week, setWeek] = useState(null);
   const [failed, setFailed] = useState(false);
   const [notification, setNotification] = useState(null);
@@ -118,9 +139,18 @@ export default function App() {
   if (failed) return <p className="ds-state">This week's list could not be loaded. Reload the page.</p>;
   if (!week) return <p className="ds-state">Loading this week's list…</p>;
 
+  if (hash === SCORING_HASH) {
+    return (
+      <div className="dz">
+        <Header user={week.user} hash={hash} />
+        <Scoring week={week} />
+      </div>
+    );
+  }
+
   return (
     <div className="dz">
-      <Header user={week.user} />
+      <Header user={week.user} hash={hash} />
       <Hero week={week} />
       <main className="ds-in ds-m">
         <div className="ds-groups">

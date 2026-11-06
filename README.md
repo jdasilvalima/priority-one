@@ -16,7 +16,7 @@ PriorityOne reads those sources and replaces last week's 38 alerts from 5 tools 
 
 1. **Open the page on Monday morning.** The accounts that need attention are already sorted.
 2. **Read why.** Each card shows the signals behind it and where the data came from.
-3. **Check the score.** "How is this score calculated?" shows the sum, so nothing is a black box. "Wrong priority?" lets the Account Manager disagree.
+3. **Check the score.** "How is this score calculated?" shows the sum, so nothing is a black box. "Wrong priority?" lets the Account Manager disagree. The "How scoring works" page lists what each issue is worth.
 4. **Act.** Each card gives one next step with a time estimate. In this demo, the buttons only show a message explaining what they would do in production.
 
 ## How the score works
@@ -55,14 +55,14 @@ Accounts are ranked by **highest priority first, then by score**. That is why Ha
 | Auth rate or volume drop | Critical | Last 7 days vs the previous 28: auth rate down 2 pts or more, or daily volume down 20% or more | Payments |
 | Escalated support case | Critical | An open case is escalated, urgent or past its SLA | Salesforce |
 | Competitor named on a call | Critical | A competitor was mentioned on a call in the last 14 days | Gong |
-| Champion left | High | The main contact left in the last 90 days | Clay, Salesforce |
+| Champion left | High | The champion left in the last 90 days | Clay, Salesforce |
 | Renewal within 90 days | High | The contract ends within 90 days and no renewal opportunity is open | Salesforce |
 | Ramp below commitment | High | 60+ days after go-live, the last 30 days are at least 25% below the commitment | Payments, Salesforce |
 | Support cases piling up | Medium | 3 or more cases in 30 days | Salesforce |
 | Low satisfaction score | Medium | The latest survey score is 6 or below | Salesforce |
 | No call in 60+ days | Low | No call and no meeting for 60 days or more | Gong, Salesforce |
 
-Rules, points, size bands and actions all live in one readable file: [`config/playbook.json`](config/playbook.json).
+Rules, points, size bands and actions all live in one readable file: [`config/playbook.json`](config/playbook.json). The "How scoring works" page reads the same file, so it always shows the real points and thresholds.
 
 ## How it is built
 
@@ -80,7 +80,7 @@ flowchart LR
 | Database | Supabase (Postgres) |
 | API | FastAPI on Vercel, one route: `GET /api/week` |
 | Page | React and Vite on Vercel |
-| Tests | pytest, 176 tests covering the rules, the score, the 8 demo accounts, the database rows and the API |
+| Tests | pytest, 184 tests covering the rules, the score, the 8 demo accounts, the database rows and the API |
 
 ## Choices and trade-offs
 

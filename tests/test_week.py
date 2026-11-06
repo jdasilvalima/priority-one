@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 import pytest
 
 from app.sources import load_playbook, load_raw
-from app.week import build_week, effort_label, fresh_label, money_label
+from app.week import build_week, effort_label, fresh_label, money_label, scoring_guide
 from tests.builders import NOW
 
 
@@ -159,3 +159,67 @@ def test_money_label(revenue, label):
 ])
 def test_effort_label(minutes, band, label):
     assert effort_label(minutes, band) == label
+
+
+def issue(scoring: dict, label: str) -> dict:
+    return next(i for tier in scoring["tiers"] for i in tier["issues"] if i["label"] == label)
+
+
+def test_each_issue_is_worth_the_points_of_its_tier(week):
+    worth = {i["label"]: tier["points"] for tier in week["scoring"]["tiers"] for i in tier["issues"]}
+    assert worth == {
+        "Auth rate or volume drop": 50,
+        "Escalated support case": 50,
+        "Competitor named on a call": 50,
+        "Champion left": 30,
+        "Renewal within 90 days": 30,
+        "Ramp below commitment": 30,
+        "Support cases piling up": 15,
+        "Low satisfaction score": 15,
+        "No call in 60+ days": 5,
+    }
+
+
+def test_scoring_tiers_run_from_most_to_least_serious(week):
+    assert [t["tier"] for t in week["scoring"]["tiers"]] == ["Critical", "High", "Medium", "Low"]
+
+
+def test_scoring_gives_the_size_multipliers(week):
+    assert week["scoring"]["sizes"] == [
+        {"label": "Small, under €100k / yr", "multiplier": "1"},
+        {"label": "Medium, €100k–1M / yr", "multiplier": "1.5"},
+        {"label": "Large, over €1M / yr", "multiplier": "2"},
+    ]
+
+
+def test_scoring_names_where_each_issue_comes_from(week):
+    assert issue(week["scoring"], "Ramp below commitment")["sources"] == "Payments DB, Salesforce"
+    assert issue(week["scoring"], "Competitor named on a call")["sources"] == "Gong"
+
+
+def test_scoring_explains_when_an_issue_counts_with_the_real_thresholds(week):
+    assert issue(week["scoring"], "Competitor named on a call")["when"] == (
+        "A competitor was named on a call in the last 14 days"
+    )
+    assert issue(week["scoring"], "Auth rate or volume drop")["when"] == (
+        "Last 7 days vs the previous 28: auth rate down 2 pts or more, or daily volume down 20% or more"
+    )
+
+
+def test_every_threshold_used_by_a_rule_is_shown_to_the_am():
+    for signal in load_playbook()["signals"]:
+        for name in signal.get("params", {}):
+            assert f"{{{name}}}" in signal["rule"], f"{signal['signal_id']} hides {name}"
+
+
+def test_changing_the_points_changes_the_scoring_page():
+    playbook = load_playbook()
+    playbook["tier_points"]["Critical"] = 40
+    assert scoring_guide(playbook)["tiers"][0]["points"] == 40
+
+
+def test_changing_a_threshold_changes_the_scoring_page():
+    playbook = load_playbook()
+    signal = next(s for s in playbook["signals"] if s["signal_id"] == "sig_competitor_named")
+    signal["params"]["lookback_days"] = 10
+    assert "last 10 days" in issue(scoring_guide(playbook), "Competitor named on a call")["when"]

@@ -91,6 +91,29 @@ def _card(row: dict, labels: dict, fresh: dict) -> dict:
     }
 
 
+def scoring_guide(playbook: dict) -> dict:
+    """What each issue is worth. Read from the playbook, so the page cannot disagree with the rules."""
+    labels = {s["source"]: s["label"] for s in playbook["sources"]}
+    return {
+        "tiers": [
+            {
+                "tier": tier,
+                "points": playbook["tier_points"][tier],
+                "issues": [
+                    {
+                        "label": s["label"],
+                        "when": s["rule"].format(**s.get("params", {})),
+                        "sources": ", ".join(labels[source] for source in s["sources"]),
+                    }
+                    for s in playbook["signals"] if s["tier"] == tier
+                ],
+            }
+            for tier in playbook["tier_order"]
+        ],
+        "sizes": [{"label": b["label"], "multiplier": str(b["multiplier"])} for b in playbook["size_bands"]],
+    }
+
+
 def take_snapshot(raw: dict, now: datetime, playbook: dict) -> dict:
     """Everything worth keeping after scoring. This is what the database stores."""
     user = raw["salesforce"]["users"]["records"][0]
@@ -151,6 +174,7 @@ def render_week(snapshot: dict, now: datetime, playbook: dict) -> dict:
             for r in accounts if r["tier"] not in playbook["list_tiers"]
         ],
         "healthy_count": len(snapshot["book"]) - len(accounts),
+        "scoring": scoring_guide(playbook),
     }
 
 

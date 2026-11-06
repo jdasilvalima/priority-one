@@ -231,5 +231,92 @@
    "equation": "5 × 1.5 ≈ 8"
   }
  ],
- "healthy_count": 34
+ "healthy_count": 34,
+ "scoring": {
+  "tiers": [
+   {
+    "tier": "Critical",
+    "points": 50,
+    "issues": [
+     {
+      "label": "Auth rate or volume drop",
+      "when": "Last 7 days vs the previous 28: auth rate down 2 pts or more, or daily volume down 20% or more",
+      "sources": "Payments DB"
+     },
+     {
+      "label": "Escalated support case",
+      "when": "An open case is escalated, urgent or past its SLA",
+      "sources": "Salesforce"
+     },
+     {
+      "label": "Competitor named on a call",
+      "when": "A competitor was named on a call in the last 14 days",
+      "sources": "Gong"
+     }
+    ]
+   },
+   {
+    "tier": "High",
+    "points": 30,
+    "issues": [
+     {
+      "label": "Champion left",
+      "when": "Your champion left the company in the last 90 days",
+      "sources": "Clay, Salesforce"
+     },
+     {
+      "label": "Renewal within 90 days",
+      "when": "The contract ends within 90 days and no renewal opportunity is open",
+      "sources": "Salesforce"
+     },
+     {
+      "label": "Ramp below commitment",
+      "when": "60 days or more after go-live, the last 30 days of volume are at least 25% below the monthly commitment",
+      "sources": "Payments DB, Salesforce"
+     }
+    ]
+   },
+   {
+    "tier": "Medium",
+    "points": 15,
+    "issues": [
+     {
+      "label": "Support cases piling up",
+      "when": "3 or more cases opened in 30 days",
+      "sources": "Salesforce"
+     },
+     {
+      "label": "Low satisfaction score",
+      "when": "The latest survey score is 6 or below",
+      "sources": "Salesforce"
+     }
+    ]
+   },
+   {
+    "tier": "Low",
+    "points": 5,
+    "issues": [
+     {
+      "label": "No call in 60+ days",
+      "when": "No call and no meeting for 60 days or more",
+      "sources": "Gong, Salesforce"
+     }
+    ]
+   }
+  ],
+  "sizes": [
+   {
+    "label": "Small, under €100k / yr",
+    "multiplier": "1"
+   },
+   {
+    "label": "Medium, €100k–1M / yr",
+    "multiplier": "1.5"
+   },
+   {
+    "label": "Large, over €1M / yr",
+    "multiplier": "2"
+   }
+  ]
+ }
 }

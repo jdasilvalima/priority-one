@@ -9,7 +9,7 @@ const FLAG_REASONS = [
   "Wrong next step",
 ];
 
-function Calculation({ card }) {
+export function Calculation({ card }) {
   return (
     <div className="ds-box">
       <div className="ds-scroll">
