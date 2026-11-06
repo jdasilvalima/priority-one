@@ -107,7 +107,10 @@ button:focus-visible, select:focus-visible { outline: 2px solid #0ABF53; outline
 .ds-toast button { border: 0; background: none; color: #C9D1DD; font-size: 20px; line-height: 1; padding: 0 2px; font-family: inherit; }
 
 @media (max-width: 640px) {
-  .ds-in { padding: 0 18px; }
+  /* Sides only: .ds-m keeps its own top and bottom padding. */
+  .ds-in { padding-left: 18px; padding-right: 18px; }
+  /* The bar wraps on two lines here, so its 68px minimum height leaves no room around them. */
+  .ds-bar { padding-top: 14px; padding-bottom: 14px; }
   .ds-hero h1 { font-size: 34px; }
   .ds-card { padding: 18px; }
   .ds-score { flex: 1 1 100%; text-align: left; }
