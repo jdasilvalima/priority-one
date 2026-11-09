@@ -103,27 +103,6 @@ flowchart LR
 | Hosting | Vercel for the demo. The platform runs on any server with Docker |
 | Tests | pytest: 226 tests covering the rules, the score, the 8 demo accounts, the API and the sync, plus 10 against the running stack |
 
-## Choices and trade-offs
-
-| Choice | Why | What it costs |
-|---|---|---|
-| Two folders | The demo has nothing that can stop working, and the platform shows the real system | The page exists twice. The demo is a frozen copy |
-| One copy of the scoring | Both folders show the same result, and a test checks it | The demo needs a regenerate step when the rules change |
-| Rules instead of a model | Anyone can redo a score by hand and challenge it | Points and thresholds are human guesses until tested |
-| Scores calculated by the sync | The page stays fast, and each run is kept for comparison | The page is only as fresh as the last sync |
-| A failed sync keeps the last good week | The Account Manager never gets an empty page | The week can be out of date, and nothing flags it yet |
-| One database login per service | A leaked API login cannot change a score, and the sync never sees the actions | Three logins to manage |
-| The browser never talks to the database | Database access stays on the server | Every read goes through the API |
-| One shared password | It protects the writes without an identity provider | Actions are saved as the account's owner, not as a person |
-
-## Assumptions
-
-- **Everything is fictional.** Companies, people and numbers are mock data, and no real system is connected.
-- **Both versions are a snapshot.** The mock data ends on Sunday 1 November 2026, so the scoring stays on the following Monday morning. With real sources, it uses the real time.
-- **The sources are shaped like exports from each tool.** The demo reads them as JSON files, and the platform fetches them over HTTP.
-- **One Account Manager** owns all 42 accounts.
-- **Points and thresholds are starting assumptions.** The 38 alerts baseline is invented too. Both would be checked with Account Managers and against what really happened to the accounts.
-
 ## Run it yourself
 
 **The demo.** You need Node 22.
@@ -175,12 +154,3 @@ platform/
   docker-compose.yml     The whole stack
 vercel.json              Publishes demo/ only
 ```
-
-## Before production
-
-[The platform's README](platform/README.md#before-real-customer-data) lists what real customer data would need: real sources, single sign-on, sending actions to Salesforce, alerts on out-of-date data, and backups.
-
-Two product steps come with it:
-
-- **Proof that it helps:** track whether accounts get handled sooner, then adjust the points every month.
-- **Browser tests:** add automated tests for the page, which is only checked by hand today.
