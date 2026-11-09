@@ -4,12 +4,13 @@ import Card from "./Card.jsx";
 import Login from "./Login.jsx";
 import { notifications } from "./notifications.js";
 import Scoring, { SCORING_HASH, ScoreStrip } from "./Scoring.jsx";
+import { TOUR_HASH, isFirstVisit, startTour } from "./Tour.jsx";
 import { TIERS, TierPill } from "./tiers.jsx";
 
 const NOTIFICATION_MS = 7000;
 
 function Header({ user, hash, onLogout }) {
-  const onScoring = hash === SCORING_HASH;
+  const page = hash === SCORING_HASH ? SCORING_HASH : "#";
   return (
     <header className="ds-top">
       <div className="ds-in ds-bar">
@@ -18,12 +19,13 @@ function Header({ user, hash, onLogout }) {
           <b>PriorityOne</b>
         </div>
         <nav className="ds-nav" aria-label="Main">
-          <a href="#" aria-current={onScoring ? undefined : "page"}>
+          <a href="#" aria-current={page === "#" ? "page" : undefined}>
             This week
           </a>
-          <a href={SCORING_HASH} aria-current={onScoring ? "page" : undefined}>
+          <a href={SCORING_HASH} aria-current={page === SCORING_HASH ? "page" : undefined}>
             How scoring works
           </a>
+          <a href={TOUR_HASH}>Take the tour</a>
         </nav>
         <div className="ds-who">
           <span>
@@ -169,6 +171,17 @@ export default function App() {
   }, [notification]);
 
   const notify = useCallback((text) => setNotification({ text }), []);
+
+  // The tour starts on the first visit, and again from "Take the tour" in the menu.
+  useEffect(() => {
+    if (!week || hash === SCORING_HASH) return;
+    if (hash === TOUR_HASH) {
+      window.location.hash = "";
+      startTour(week);
+    } else if (isFirstVisit()) {
+      startTour(week);
+    }
+  }, [week, hash]);
 
   const act = useCallback(
     async (request, message) => {

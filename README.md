@@ -26,6 +26,8 @@ PriorityOne reads those sources and replaces last week's 38 alerts from 5 tools 
 3. **Check the score.** "How is this score calculated?" shows the sum, so nothing is a black box. "Wrong priority?" lets the Account Manager disagree. The "How scoring works" page lists what each issue is worth.
 4. **Act.** Each card gives one next step with a time estimate. In the demo, the buttons only show a message explaining what they would do. In the platform, they are saved in the database.
 
+On the first visit, an 8-step tour points at each part of the page and says what each button does in production. "Take the tour" in the menu shows it again.
+
 ## How the score works
 
 ```text
@@ -69,7 +71,7 @@ Accounts are ranked by **highest priority first, then by score**. That is why Ha
 | Low satisfaction score | Medium | The latest survey score is 6 or below | Salesforce |
 | No call in 60+ days | Low | No call and no meeting for 60 days or more | Gong, Salesforce |
 
-Rules, points, size bands and actions all live in one readable file: [`config/playbook.json`](config/playbook.json). The "How scoring works" page reads the same file, so it always shows the real points and thresholds.
+Rules, points, size bands and actions all live in one readable file: [`platform/config/playbook.json`](platform/config/playbook.json). The "How scoring works" page reads the same file, so it always shows the real points and thresholds.
 
 ## How it is built
 
@@ -96,10 +98,10 @@ flowchart LR
 | Scoring | Python 3.12 |
 | Database | Postgres 17 |
 | API | FastAPI: reads the week, saves actions, handles the login |
-| Page | React and Vite |
+| Page | React and Vite, with driver.js for the first-visit tour |
 | Packaging | Docker Compose |
 | Hosting | Vercel for the demo. The platform runs on any server with Docker |
-| Tests | pytest: 221 tests covering the rules, the score, the 8 demo accounts, the API and the sync, plus 10 against the running stack |
+| Tests | pytest: 226 tests covering the rules, the score, the 8 demo accounts, the API and the sync, plus 10 against the running stack |
 
 ## Choices and trade-offs
 
