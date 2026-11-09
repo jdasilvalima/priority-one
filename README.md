@@ -6,6 +6,13 @@
 
 [![The PriorityOne page, showing the two top accounts of the week](docs/page.png)](https://priority-one-iota.vercel.app)
 
+## Two folders
+
+| Folder | What it is | Run it |
+|---|---|---|
+| [`demo/`](demo) | The page with fake data. Static files only: no server, no database, no login. This is the live link | Open the link |
+| [`platform/`](platform) | The same product as a system you can deploy: Docker, Postgres, a login, and buttons that write to the database | `docker compose up` |
+
 ## The problem
 
 Account Managers look after dozens of customers, and the warning signs are scattered across Salesforce, Gong, Clay and payment data. Checking every tool takes time, and the important signal gets lost in the noise.
@@ -17,7 +24,7 @@ PriorityOne reads those sources and replaces last week's 38 alerts from 5 tools 
 1. **Open the page on Monday morning.** The accounts that need attention are already sorted.
 2. **Read why.** Each card shows the signals behind it and where the data came from.
 3. **Check the score.** "How is this score calculated?" shows the sum, so nothing is a black box. "Wrong priority?" lets the Account Manager disagree. The "How scoring works" page lists what each issue is worth.
-4. **Act.** Each card gives one next step with a time estimate. In this demo, the buttons only show a message explaining what they would do in production.
+4. **Act.** Each card gives one next step with a time estimate. In the demo, the buttons only show a message explaining what they would do. In the platform, they are saved in the database.
 
 ## How the score works
 
@@ -66,99 +73,112 @@ Rules, points, size bands and actions all live in one readable file: [`config/pl
 
 ## How it is built
 
+**The demo** is one generated file and a page, so it cannot fail at runtime.
+
 ```mermaid
 flowchart LR
-    A["4 mock sources<br/>+ playbook<br/>(JSON files)"] --> B["Python<br/>9 rules, score, rank"]
-    B --> C[("Supabase<br/>Postgres")]
-    C -->|read-only login| D["FastAPI<br/>GET /api/week"]
-    D --> E["React page"]
+    A["Python<br/>9 rules, score, rank"] -->|generates| B["week.json"]
+    B --> C["React page<br/>on Vercel"]
+```
+
+**The platform** runs the full flow in Docker. [Its README](platform/README.md) describes each service, route and table.
+
+```mermaid
+flowchart LR
+    A["Fake sources<br/>over HTTP"] --> B["Sync<br/>9 rules, score, rank"]
+    B --> C[("Postgres")]
+    C <--> D["API<br/>FastAPI"]
+    D <--> E["React page<br/>behind nginx"]
 ```
 
 | Part | Tools |
 |---|---|
 | Scoring | Python 3.12 |
-| Database | Supabase (Postgres) |
-| API | FastAPI on Vercel, one route: `GET /api/week` |
-| Page | React and Vite on Vercel |
-| Tests | pytest, 184 tests covering the rules, the score, the 8 demo accounts, the database rows and the API |
+| Database | Postgres 17 |
+| API | FastAPI: reads the week, saves actions, handles the login |
+| Page | React and Vite |
+| Packaging | Docker Compose |
+| Hosting | Vercel for the demo. The platform runs on any server with Docker |
+| Tests | pytest: 221 tests covering the rules, the score, the 8 demo accounts, the API and the sync, plus 10 against the running stack |
 
 ## Choices and trade-offs
 
 | Choice | Why | What it costs |
 |---|---|---|
+| Two folders | The demo has nothing that can stop working, and the platform shows the real system | The page exists twice. The demo is a frozen copy |
+| One copy of the scoring | Both folders show the same result, and a test checks it | The demo needs a regenerate step when the rules change |
 | Rules instead of a model | Anyone can redo a score by hand and challenge it | Points and thresholds are human guesses until tested |
-| Scores calculated before loading | The page stays fast and simple | The data is a snapshot, not live |
-| No login and no write route | Nothing can be changed from the page, so a shared link is safe | The buttons are not connected yet |
+| Scores calculated by the sync | The page stays fast, and each run is kept for comparison | The page is only as fresh as the last sync |
+| A failed sync keeps the last good week | The Account Manager never gets an empty page | The week can be out of date, and nothing flags it yet |
+| One database login per service | A leaked API login cannot change a score, and the sync never sees the actions | Three logins to manage |
 | The browser never talks to the database | Database access stays on the server | Every read goes through the API |
-| A read-only database login | A leaked login could not change anything | Reloading data needs a separate manual step |
-| A daily call to the API | It keeps the free Supabase project from pausing | It depends on a free plan, so it is not for production |
+| One shared password | It protects the writes without an identity provider | Actions are saved as the account's owner, not as a person |
 
 ## Assumptions
 
 - **Everything is fictional.** Companies, people and numbers are mock data, and no real system is connected.
-- **The demo is a snapshot.** The mock data ends on Sunday 1 November 2026, so the page stays on the following Monday morning. In production, it would use the real time.
-- **The sources are JSON files** shaped like exports from each tool.
+- **Both versions are a snapshot.** The mock data ends on Sunday 1 November 2026, so the scoring stays on the following Monday morning. With real sources, it uses the real time.
+- **The sources are shaped like exports from each tool.** The demo reads them as JSON files, and the platform fetches them over HTTP.
 - **One Account Manager** owns all 42 accounts.
 - **Points and thresholds are starting assumptions.** The 38 alerts baseline is invented too. Both would be checked with Account Managers and against what really happened to the accounts.
 
 ## Run it yourself
 
-You need Python 3.12 and Node 22.
-
-**The page.** It needs no database: on your machine it reads `web/public/week.json`.
+**The demo.** You need Node 22.
 
 ```bash
 git clone https://github.com/jdasilvalima/priority-one.git
-cd priority-one/web
+cd priority-one/demo
 npm install
 npm run dev
 ```
 
 Then open <http://localhost:5173>.
 
-**The tests.** Run these from the `priority-one` folder.
+**The platform.** You need Docker.
+
+```bash
+cd priority-one/platform
+cp .env.example .env
+docker compose up --build --wait
+```
+
+Then open <http://localhost:8080>. The password is `APP_PASSWORD` in your `.env`.
+
+**The tests.** You need Python 3.12. Run these from the `platform` folder.
 
 ```bash
 pip install -r requirements-dev.txt
 python -m pytest
 ```
 
-**After changing the data or the rules.** The first command rebuilds the page data and the second rebuilds `db/seed.sql`.
+**After changing the data or the rules.** Run this from the `platform` folder to rebuild the demo's data.
 
 ```bash
 python scripts/export_week.py
-python scripts/make_seed.py
 ```
-
-<details>
-<summary><strong>Connect your own database and deploy</strong></summary>
-
-1. Create a Supabase project, then run `db/schema.sql` and `db/seed.sql` in its SQL editor.
-2. Give the read-only login a password in the SQL editor: `alter role week_reader password '...';`. Letters and digits are safest, because symbols must be percent-encoded in the address.
-3. Copy `.env.example` to `.env` and fill in the address. Use the transaction pooler (port 6543) with the user `week_reader.<project-ref>`.
-4. Check the connection with `python scripts/check_db.py`. It compares the database with the page data and confirms that writing is refused.
-5. Import the repository into Vercel, choose the **Other** application preset, and add `DATABASE_URL_READONLY`. `vercel.json` does the rest.
-
-</details>
 
 ## Project layout
 
 ```text
-api/week.py            The only API route
-app/                   Rules, score, page data, database access
-config/playbook.json   The signals, points, size bands and actions
-data/                  Mock exports from Salesforce, Gong, Clay and payments
-db/                    Database tables and demo data
-scripts/               Generate data, build the seed, check the connection
-tests/                 The test suite
-web/                   The React page
+demo/                    The static page and week.json
+platform/
+  app/                   Rules, score, sync, API, login
+  config/playbook.json   The signals, points, size bands and actions
+  data/                  Mock exports from Salesforce, Gong, Clay and payments
+  db/                    Database migrations
+  scripts/               Generate the mock data and the demo's week.json
+  tests/                 The test suite
+  web/                   The page, connected to the API
+  docker-compose.yml     The whole stack
+vercel.json              Publishes demo/ only
 ```
 
 ## Before production
 
-- **Real data:** replace the JSON files with scheduled syncs from each tool.
-- **Access:** add single sign-on, so each Account Manager sees only their own accounts.
-- **Actions:** connect the buttons, for example to create a Salesforce task.
-- **Monitoring:** alert when a sync fails, and show on the page when a source is out of date.
+[The platform's README](platform/README.md#before-real-customer-data) lists what real customer data would need: real sources, single sign-on, sending actions to Salesforce, alerts on out-of-date data, and backups.
+
+Two product steps come with it:
+
 - **Proof that it helps:** track whether accounts get handled sooner, then adjust the points every month.
 - **Browser tests:** add automated tests for the page, which is only checked by hand today.

@@ -1,15 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "installCommand": "npm --prefix web ci",
-  "buildCommand": "npm --prefix web run build",
-  "outputDirectory": "web/dist",
-  "regions": ["pdx1"],
-  "functions": {
-    "api/week.py": {
-      "includeFiles": "config/**",
-      "excludeFiles": "{web/**,tests/**,data/**,db/**,scripts/**}"
-    }
-  },
-  "crons": [{ "path": "/api/week", "schedule": "0 8 * * *" }]
+  "installCommand": "npm --prefix demo ci",
+  "buildCommand": "npm --prefix demo run build",
+  "outputDirectory": "demo/dist"
 }
