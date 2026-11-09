@@ -136,6 +136,14 @@ button:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid
 .ds-order { margin: 12px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.5; color: #33415A; }
 .ds-scoring .ds-box { margin-top: 12px; background: #fff; }
 
+/* The first-visit tour, drawn by driver.js. */
+.driver-popover.ds-tour { font-family: Inter, system-ui, sans-serif; color: #00112C; border-radius: 14px; padding: 18px; max-width: 320px; }
+.ds-tour .driver-popover-title { font-size: 17px; font-weight: 700; }
+.ds-tour .driver-popover-description { margin-top: 6px; font-size: 14px; line-height: 1.5; color: #33415A; }
+.ds-tour .driver-popover-progress-text { font-size: 12px; color: #5C687C; }
+.ds-tour .driver-popover-footer button { font-family: inherit; font-size: 14px; font-weight: 600; text-shadow: none; border-radius: 999px; padding: 7px 14px; border: 1px solid #C9D1DD; background: #fff; color: #00112C; }
+.ds-tour .driver-popover-footer .driver-popover-next-btn { background: #0ABF53; border-color: #0ABF53; }
+
 @media (max-width: 640px) {
   /* Sides only: .ds-m keeps its own top and bottom padding. */
   .ds-in { padding-left: 18px; padding-right: 18px; }
